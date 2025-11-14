@@ -1,8 +1,7 @@
 <?php require "common/header.php"; ?>
     <section class="google-map py-0">
-      <iframe frameborder="0" height="500" width="100%"
-        src="https://maps.google.com/maps?q=Suite%20100%20San%20Francisco%2C%20LA%2094107%20United%20States&amp;t=m&amp;z=10&amp;output=embed&amp;iwloc=near"></iframe>
-    </section><!-- /.GoogleMap -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.245282220858!2d77.84075717535782!3d30.362846174764815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390f2a2f15e13231%3A0xce927b1b563dfa5!2sJoshi%20Multispeciality%20Hospital%20-%20Selaqui!5e1!3m2!1sen!2sin!4v1762407938103!5m2!1sen!2sin" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+  </section><!-- /.GoogleMap -->
 
     <!-- ==========================
         contact layout 1
@@ -76,10 +75,10 @@
                 <div>
                   <ul class="contact__list list-unstyled mb-30">
                     <li>
-                      <i class="icon-phone"></i><a href="tel:+5565454117">Emergency Line: (002) 01061245741</a>
+                      <i class="icon-phone"></i><a href="tel:+917060100108">Emergency Line: (+91) 7060100108</a>
                     </li>
                     <li>
-                      <i class="icon-location"></i><a href="#">Location: Brooklyn, New York</a>
+                      <i class="icon-location"></i><a href="#">Location: Chakrata Rd, near Sarna pul, Selakui, Uttarakhand 248011</a>
                     </li>
                     <li>
                       <i class="icon-clock"></i><a href="contact-us.html">Mon - Fri: 8:00 am - 7:00 pm</a>

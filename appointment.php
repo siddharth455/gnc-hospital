@@ -345,7 +345,7 @@
                 <div>
                   <ul class="contact__list list-unstyled mb-30">
                     <li>
-                      <i class="icon-phone"></i><a href="tel:+5565454117">Emergency Line: (002) 01061245741</a>
+                      <i class="icon-phone"></i><a href="tel:+917060100108">Emergency Line: (002) 7060100108</a>
                     </li>
                     <li>
                       <i class="icon-location"></i><a href="#">Location: Brooklyn, New York</a>

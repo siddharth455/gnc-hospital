@@ -12,16 +12,17 @@
             </div>
 
             <div class="col-sm-12 col-md-7">
-              <h2 class="info__ttile">Radiology Clinic</h2>
+              <h2 class="info__ttile">Laboratory Analysis Clinic</h2>
               <p class="info__desc">
-                Providing high-quality diagnostic imaging including X-ray and ultrasound services for accurate and timely medical evaluation.
+                Comprehensive diagnostic laboratory services including pathology, microbiology, and biochemistry testing to support accurate diagnosis, treatment planning, and ongoing patient monitoring.
               </p>
             </div>
+
           </div>
 
           <ul class="list-items list-items-layout1 list-unstyled mb-40">
-            <li>We offer safe, fast, and precise imaging services to assist in diagnosis and ongoing treatment.</li>
-            <li>Our radiology experts use modern technology to ensure reliable results with maximum patient comfort.</li>
+            <li>We conduct a wide range of clinical laboratory tests to help identify infections, metabolic conditions, organ disorders, cancers, and other medical concerns.</li>
+            <li>Our skilled specialists ensure accurate sample processing, timely reporting, and advanced diagnostic evaluations using modern laboratory technology.</li>
           </ul>
 
         </div>
@@ -42,117 +43,112 @@
           <h5 class="text-block__title">Overview</h5>
 
           <p class="text-block__desc mb-20 font-weight-bold color-secondary">
-            Our Radiology Clinic offers essential imaging services including X-ray and ultrasound to support accurate diagnosis and treatment planning. These imaging tests help doctors visualize internal structures safely and effectively.
+            The Laboratory Analysis Clinic provides essential diagnostic support through advanced testing in pathology, biochemistry, microbiology, hematology, and immunology. Our lab plays an important role in disease detection, monitoring, and treatment planning.
           </p>
 
           <p class="text-block__desc mb-20">
-            Whether evaluating injuries, monitoring pregnancy, detecting infections, or diagnosing internal conditions, our clinic ensures high-clarity imaging with quick reporting and expert interpretation by trained radiologists.
+            With modern equipment and strict quality control, we ensure accurate results for routine tests, emergency investigations, and specialized diagnostic assessments. Our team follows international safety and quality standards to deliver reliable reports for every patient.
           </p>
         </div>
-
 
         <!-- IMAGE ONLY -->
         <div class="video-banner-layout2 mb-70" style="height:220px; overflow:hidden; border-radius:8px;">
           <img src="assets/images/banners/6.jpg" alt="banner" style="height:100%; width:100%; object-fit:cover;">
         </div>
 
-
         <div class="text-block mb-50">
-          <h5 class="text-block__title">What We Diagnose</h5>
+          <h5 class="text-block__title">Symptoms & Diagnosis</h5>
 
           <p class="text-block__desc mb-20">
-            We provide high-resolution X-ray and ultrasound services to detect fractures, infections, abdominal conditions, pregnancy health, joint issues, lung problems, soft-tissue abnormalities, and much more.
+            Laboratory testing helps detect infections, anemia, hormonal imbalance, kidney disease, liver disorders, nutritional deficiencies, autoimmune conditions, and various chronic illnesses. Patients may require testing when experiencing fatigue, fever, pain, swelling, weight changes, or persistent symptoms.
           </p>
 
           <p class="text-block__desc mb-20">
-            Our skilled radiographers ensure proper positioning, clear imaging, and patient comfort during every scan.
+            Our diagnostic approach includes blood tests, urine analysis, stool evaluation, culture and sensitivity tests, biopsies, tissue analysis, and advanced biochemical profiling. Every sample undergoes strict evaluation to ensure accuracy and reliability.
           </p>
         </div>
 
-
         <ul class="list-items list-items-layout4 list-horizontal list-unstyled mb-60">
-          <li>X-ray imaging</li>
-          <li>Ultrasound scans</li>
-          <li>Pregnancy ultrasound</li>
-          <li>Chest & abdominal imaging</li>
-          <li>Musculoskeletal evaluation</li>
-          <li>Soft-tissue imaging</li>
-          <li>Doppler ultrasound (if available)</li>
+          <li>Complete blood count (CBC)</li>
+          <li>Biochemistry panels</li>
+          <li>Hormone testing</li>
+          <li>Microbiology cultures</li>
+          <li>Histopathology analysis</li>
+          <li>Urine & stool examination</li>
+          <li>Immunology & serology</li>
         </ul>
-
 
         <div class="text-block mb-50">
           <h5 class="text-block__title">Our Services</h5>
 
           <p class="text-block__desc mb-20">
-            Our radiology services include digital X-ray, general ultrasound, pregnancy scanning, joint and muscle imaging, chest evaluations, abdominal scans, and doctor-recommended diagnostic tests. Reports are prepared promptly for further medical consultation.
+            Our laboratory provides hematology tests, infection screening, cancer-related pathology evaluation, metabolic panel testing, allergy profiles, organ function tests, prenatal screenings, and microbiology cultures. We support outpatient, inpatient, surgical, emergency, and ICU diagnostic needs.
           </p>
         </div>
-
 
         <div class="text-block mb-50">
           <h5 class="text-block__title">Health Tips & Info</h5>
 
           <p class="text-block__desc mb-20">
-            Always bring previous reports for better comparison. Wear comfortable clothing during scans, follow fasting instructions for abdominal ultrasound, and avoid unnecessary radiation exposure by keeping your doctor informed.
+            Regular health checkups help detect conditions early. Stay hydrated before blood tests, follow fasting instructions when required, complete antibiotic courses before cultures, and seek medical evaluation if symptoms persist or worsen.
           </p>
         </div>
 
 
-        <!-- RADIOLOGY FAQ -->
+        <!-- LABORATORY FAQ -->
         <div id="accordion" class="mb-70">
 
           <div class="accordion-item opened">
             <div class="accordion__header" data-toggle="collapse" data-target="#collapse3">
-              <a class="accordion__title" href="#">What imaging services do you offer?</a>
+              <a class="accordion__title" href="#">What types of tests are available?</a>
             </div>
             <div id="collapse3" class="collapse show" data-parent="#accordion">
               <div class="accordion__body">
-                <p>We provide X-ray and ultrasound services for diagnosing fractures, infections, abdominal issues, pregnancy health, and soft-tissue conditions.</p>
+                <p>We offer a wide range of tests including blood analysis, urine and stool tests, cultures, biopsies, hormonal profiles, and advanced biochemical and pathology diagnostics.</p>
               </div>
             </div>
           </div>
 
           <div class="accordion-item">
             <div class="accordion__header" data-toggle="collapse" data-target="#collapse1">
-              <a class="accordion__title" href="#">Is an X-ray safe?</a>
+              <a class="accordion__title" href="#">Do I need to fast before my test?</a>
             </div>
             <div id="collapse1" class="collapse" data-parent="#accordion">
               <div class="accordion__body">
-                <p>Yes, digital X-rays use minimal radiation and are considered safe. We take all protective precautions, especially for children and pregnant women.</p>
+                <p>Some tests such as blood sugar, lipid profile, and certain biochemistry tests require fasting. Your doctor or our lab staff will inform you if fasting is needed.</p>
               </div>
             </div>
           </div>
 
           <div class="accordion-item">
             <div class="accordion__header" data-toggle="collapse" data-target="#collapse2">
-              <a class="accordion__title" href="#">How should I prepare for an ultrasound?</a>
+              <a class="accordion__title" href="#">How long do reports take?</a>
             </div>
             <div id="collapse2" class="collapse" data-parent="#accordion">
               <div class="accordion__body">
-                <p>Abdominal scans may require fasting, while pelvic scans may require a full bladder. You will be informed of specific instructions beforehand.</p>
+                <p>Most routine reports are available within 24 hours, while specialized tests such as cultures or biopsies may take additional time depending on processing requirements.</p>
               </div>
             </div>
           </div>
 
           <div class="accordion-item">
             <div class="accordion__header" data-toggle="collapse" data-target="#collapse4">
-              <a class="accordion__title" href="#">When will I receive the imaging report?</a>
+              <a class="accordion__title" href="#">Is sample collection safe?</a>
             </div>
             <div id="collapse4" class="collapse" data-parent="#accordion">
               <div class="accordion__body">
-                <p>Most X-ray reports are delivered the same day, while ultrasound reports are usually provided within a short timeframe after doctor review.</p>
+                <p>Yes. We follow international safety protocols, sterile techniques, and advanced sample handling methods to ensure safety, accuracy, and patient comfort.</p>
               </div>
             </div>
           </div>
 
           <div class="accordion-item">
             <div class="accordion__header" data-toggle="collapse" data-target="#collapse5">
-              <a class="accordion__title" href="#">Do you perform pregnancy ultrasounds?</a>
+              <a class="accordion__title" href="#">Do you handle emergency testing?</a>
             </div>
             <div id="collapse5" class="collapse" data-parent="#accordion">
               <div class="accordion__body">
-                <p>Yes, we perform routine pregnancy scans to monitor fetal growth and maternal health using safe, non-radiation ultrasound imaging.</p>
+                <p>Yes, our laboratory supports emergency and critical care with rapid testing for urgent conditions, including infections, blood loss, metabolic imbalance, and organ dysfunction.</p>
               </div>
             </div>
           </div>
@@ -164,16 +160,16 @@
           <div class="widget__body">
             <h5 class="widget__title">Health Care Plans</h5>
             <p>
-              Our radiology plans include high-quality imaging, same-day reporting, diagnostic support, pregnancy scanning, and doctor-recommended procedures for accurate medical evaluation.
+              Our diagnostic plans include routine full body screenings, metabolic evaluations, infection profiles, organ function panels, hormone testing, pathology reviews, and specialized diagnostic packages tailored to patient needs.
             </p>
 
             <div class="row">
               <div class="col-sm-12 col-md-6">
                 <div class="plan__items">
                   <ul class="list-items list-items-layout2 list-unstyled mb-0">
-                    <li>Digital X-ray imaging</li>
-                    <li>General ultrasound scans</li>
-                    <li>Pregnancy ultrasound services</li>
+                    <li>Basic health screening</li>
+                    <li>Biochemistry & metabolic panel</li>
+                    <li>Microbiology culture testing</li>
                   </ul>
                 </div>
               </div>
@@ -181,9 +177,9 @@
               <div class="col-sm-12 col-md-6">
                 <div class="plan__items">
                   <ul class="list-items list-items-layout2 list-unstyled mb-0">
-                    <li>Soft-tissue evaluations</li>
-                    <li>Chest & abdominal imaging</li>
-                    <li>Follow-up diagnostic tracking</li>
+                    <li>Pathology & tissue analysis</li>
+                    <li>Advanced hormonal evaluation</li>
+                    <li>Full diagnostic packages</li>
                   </ul>
                 </div>
               </div>
@@ -201,7 +197,7 @@
                 <div class="col-sm-12">
                   <h4 class="contact-panel__title">Book An Appointment</h4>
                   <p class="contact-panel__desc mb-30">
-                    Contact our team for X-ray or ultrasound appointments. We ensure fast service, accurate imaging, and expert support.
+                    Contact our reception staff for sample collection appointments, home collection availability, and laboratory testing queries.
                   </p>
                 </div>
 
@@ -210,8 +206,8 @@
                     <i class="icon-widget form-group-icon"></i>
                     <select class="form-control">
                       <option value="0">Choose Clinic</option>
-                      <option value="1">Radiology Clinic</option>
-                      <option value="2">Ultrasound Services</option>
+                      <option value="1">Laboratory Analysis Clinic</option>
+                      <option value="2">Pathology Clinic</option>
                     </select>
                   </div>
                 </div>
@@ -221,8 +217,8 @@
                     <i class="icon-user form-group-icon"></i>
                     <select class="form-control">
                       <option value="0">Choose Doctor</option>
-                      <option value="1">Dr. Sunil Sharma</option>
-                      <option value="2">Dr. Neha Singh</option>
+                      <option value="1">Dr. Neha Sharma</option>
+                      <option value="2">Dr. R. Ghosh</option>
                     </select>
                   </div>
                 </div>
@@ -276,13 +272,13 @@
       </div>
 
 
-      <!-- RIGHT SIDEBAR (UNCHANGED) -->
+      <!-- SIDEBAR UNCHANGED -->
       <div class="col-sm-12 col-md-12 col-lg-4">
         <aside class="sidebar has-marign-left sticky-top">
           <div class="widget widget-services">
             <h5 class="widget__title">Medical Services</h5>
             <div class="widget-content">
-              <ul class="list-unstyled mb-0">
+            <ul class="list-unstyled mb-0">
                 <li><a href="gynecology.php"><span>Gynecology Clinic</span><i class="icon-arrow-right"></i></a></li>
                 <li><a href="orthopedic.php"><span>Orthopedic Clinic</span><i class="icon-arrow-right"></i></a></li>
                 <li><a href="surgery.php"><span>Surgery Clinic</span><i class="icon-arrow-right"></i></a></li>

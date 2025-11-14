@@ -9,26 +9,25 @@
           <div class="row">
             <div class="col-sm-12 col-md-5">
               <img src="assets/images/banners/1.jpg" alt="banner" class="rounded mb-20">
-            </div>
-
+            </div><!-- /.col-md-5 -->
             <div class="col-sm-12 col-md-7">
-              <h2 class="info__ttile">Radiology Clinic</h2>
+              <h2 class="info__ttile">Orthopedic Clinic</h2>
               <p class="info__desc">
-                Providing high-quality diagnostic imaging including X-ray and ultrasound services for accurate and timely medical evaluation.
+                Comprehensive orthopedic care for bone, joint, muscle, and ligament conditions using advanced diagnostics and treatment options.
               </p>
-            </div>
-          </div>
+            </div><!-- /.col-md-7 -->
+          </div><!-- /.row -->
 
           <ul class="list-items list-items-layout1 list-unstyled mb-40">
-            <li>We offer safe, fast, and precise imaging services to assist in diagnosis and ongoing treatment.</li>
-            <li>Our radiology experts use modern technology to ensure reliable results with maximum patient comfort.</li>
+            <li>We evaluate and treat fractures, joint injuries, arthritis, sports injuries, and chronic musculoskeletal conditions.</li>
+            <li>Our orthopedic specialists use evidence-based treatment plans including physiotherapy, medication, and minimally invasive procedures.</li>
           </ul>
 
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+        </div><!-- /.info-card -->
+      </div><!-- /.col-xl-6 -->
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</section><!-- /.page-title -->
 
 
 <section class="pt-120 pb-80">
@@ -42,117 +41,112 @@
           <h5 class="text-block__title">Overview</h5>
 
           <p class="text-block__desc mb-20 font-weight-bold color-secondary">
-            Our Radiology Clinic offers essential imaging services including X-ray and ultrasound to support accurate diagnosis and treatment planning. These imaging tests help doctors visualize internal structures safely and effectively.
+            Orthopedics focuses on diagnosing, treating, and preventing conditions related to bones, joints, muscles, tendons, ligaments, and the spine. Our department provides expert care for trauma injuries, arthritis, sports injuries, spine disorders, and pediatric orthopedic conditions.
           </p>
 
           <p class="text-block__desc mb-20">
-            Whether evaluating injuries, monitoring pregnancy, detecting infections, or diagnosing internal conditions, our clinic ensures high-clarity imaging with quick reporting and expert interpretation by trained radiologists.
+            We offer complete orthopedic evaluation using physical examination, imaging, gait and movement analysis, and personalized treatment plans. Our goal is to restore strength, relieve pain, and improve overall mobility through surgical and non-surgical methods.
           </p>
-        </div>
+        </div><!-- /.text-block -->
 
-
-        <!-- IMAGE ONLY -->
-        <div class="video-banner-layout2 mb-70" style="height:220px; overflow:hidden; border-radius:8px;">
-          <img src="assets/images/banners/6.jpg" alt="banner" style="height:100%; width:100%; object-fit:cover;">
-        </div>
-
+        <div class="video-banner-layout2 mb-70" style="height:400px; overflow:hidden; border-radius:8px;">
+  <img src="assets/images/banners/6.jpg" alt="banner" style="height:100%; width:100%; object-fit:cover;">
+</div>
+<!-- /.video-banner -->
 
         <div class="text-block mb-50">
-          <h5 class="text-block__title">What We Diagnose</h5>
+          <h5 class="text-block__title">Symptoms & Diagnosis</h5>
 
           <p class="text-block__desc mb-20">
-            We provide high-resolution X-ray and ultrasound services to detect fractures, infections, abdominal conditions, pregnancy health, joint issues, lung problems, soft-tissue abnormalities, and much more.
+            Orthopedic symptoms include joint or muscle pain, stiffness, swelling, limited mobility, back pain, deformities, and difficulty walking. Diagnosis is done through X-rays, MRI, movement evaluation, and orthopedic physical examination.
           </p>
 
           <p class="text-block__desc mb-20">
-            Our skilled radiographers ensure proper positioning, clear imaging, and patient comfort during every scan.
+            Our orthopedic team ensures accurate diagnosis for conditions like fractures, ligament tears, tendonitis, arthritis, spinal issues, and sports injuries with a personalized approach.
           </p>
-        </div>
-
+        </div><!-- /.text-block -->
 
         <ul class="list-items list-items-layout4 list-horizontal list-unstyled mb-60">
           <li>X-ray imaging</li>
-          <li>Ultrasound scans</li>
-          <li>Pregnancy ultrasound</li>
-          <li>Chest & abdominal imaging</li>
-          <li>Musculoskeletal evaluation</li>
-          <li>Soft-tissue imaging</li>
-          <li>Doppler ultrasound (if available)</li>
+          <li>Fracture treatment & casting</li>
+          <li>Joint replacement surgery</li>
+          <li>Arthroscopy procedures</li>
+          <li>Sports injury management</li>
+          <li>Spine disorder evaluation</li>
+          <li>Rehabilitation planning</li>
         </ul>
-
 
         <div class="text-block mb-50">
           <h5 class="text-block__title">Our Services</h5>
 
           <p class="text-block__desc mb-20">
-            Our radiology services include digital X-ray, general ultrasound, pregnancy scanning, joint and muscle imaging, chest evaluations, abdominal scans, and doctor-recommended diagnostic tests. Reports are prepared promptly for further medical consultation.
+            Our orthopedic services include fracture care, joint replacement, ligament reconstruction, minimally invasive arthroscopy, spine assessments, chronic pain management, pediatric orthopedics, and structured rehabilitation programs tailored to each patient.
           </p>
-        </div>
-
+        </div><!-- /.text-block -->
 
         <div class="text-block mb-50">
           <h5 class="text-block__title">Health Tips & Info</h5>
 
           <p class="text-block__desc mb-20">
-            Always bring previous reports for better comparison. Wear comfortable clothing during scans, follow fasting instructions for abdominal ultrasound, and avoid unnecessary radiation exposure by keeping your doctor informed.
+            Maintain strong bones and joints through regular exercise, proper posture, balanced diet, and immediate care after injuries. Consistent physiotherapy and early diagnosis play a major role in long-term recovery.
           </p>
-        </div>
+        </div><!-- /.text-block -->
 
 
-        <!-- RADIOLOGY FAQ -->
+        <!-- ORTHOPEDIC FAQ SECTION -->
         <div id="accordion" class="mb-70">
 
           <div class="accordion-item opened">
             <div class="accordion__header" data-toggle="collapse" data-target="#collapse3">
-              <a class="accordion__title" href="#">What imaging services do you offer?</a>
+              <a class="accordion__title" href="#">What orthopedic conditions do you treat?</a>
             </div>
             <div id="collapse3" class="collapse show" data-parent="#accordion">
               <div class="accordion__body">
-                <p>We provide X-ray and ultrasound services for diagnosing fractures, infections, abdominal issues, pregnancy health, and soft-tissue conditions.</p>
+                <p>We treat fractures, joint pain, arthritis, ligament injuries, spine disorders, muscle tears, and sports-related injuries.</p>
               </div>
             </div>
           </div>
 
           <div class="accordion-item">
             <div class="accordion__header" data-toggle="collapse" data-target="#collapse1">
-              <a class="accordion__title" href="#">Is an X-ray safe?</a>
+              <a class="accordion__title" href="#">Do I need surgery for my condition?</a>
             </div>
             <div id="collapse1" class="collapse" data-parent="#accordion">
               <div class="accordion__body">
-                <p>Yes, digital X-rays use minimal radiation and are considered safe. We take all protective precautions, especially for children and pregnant women.</p>
+                <p>Most orthopedic conditions do not require surgery. We use non-surgical treatments first, such as physiotherapy, medications, and lifestyle adjustments.</p>
               </div>
             </div>
           </div>
 
           <div class="accordion-item">
             <div class="accordion__header" data-toggle="collapse" data-target="#collapse2">
-              <a class="accordion__title" href="#">How should I prepare for an ultrasound?</a>
+              <a class="accordion__title" href="#">What non-surgical treatments are available?</a>
             </div>
             <div id="collapse2" class="collapse" data-parent="#accordion">
               <div class="accordion__body">
-                <p>Abdominal scans may require fasting, while pelvic scans may require a full bladder. You will be informed of specific instructions beforehand.</p>
+                <p>We offer physiotherapy, injections, braces, medication, rehabilitation programs, and activity modification to support healing without surgery.</p>
               </div>
             </div>
           </div>
 
           <div class="accordion-item">
             <div class="accordion__header" data-toggle="collapse" data-target="#collapse4">
-              <a class="accordion__title" href="#">When will I receive the imaging report?</a>
+              <a class="accordion__title" href="#">How long does orthopedic recovery take?</a>
             </div>
             <div id="collapse4" class="collapse" data-parent="#accordion">
               <div class="accordion__body">
-                <p>Most X-ray reports are delivered the same day, while ultrasound reports are usually provided within a short timeframe after doctor review.</p>
+                <p>Recovery varies by condition. Minor issues heal in weeks, while surgeries may require longer rehabilitation and follow-up programs.</p>
               </div>
             </div>
           </div>
 
           <div class="accordion-item">
             <div class="accordion__header" data-toggle="collapse" data-target="#collapse5">
-              <a class="accordion__title" href="#">Do you perform pregnancy ultrasounds?</a>
+              <a class="accordion__title" href="#">When should I see an orthopedic specialist?</a>
             </div>
             <div id="collapse5" class="collapse" data-parent="#accordion">
               <div class="accordion__body">
-                <p>Yes, we perform routine pregnancy scans to monitor fetal growth and maternal health using safe, non-radiation ultrasound imaging.</p>
+                <p>You should visit an orthopedic doctor if you have persistent joint pain, swelling, back pain, difficulty moving, or pain after an injury.</p>
               </div>
             </div>
           </div>
@@ -164,16 +158,16 @@
           <div class="widget__body">
             <h5 class="widget__title">Health Care Plans</h5>
             <p>
-              Our radiology plans include high-quality imaging, same-day reporting, diagnostic support, pregnancy scanning, and doctor-recommended procedures for accurate medical evaluation.
+              Our orthopedic plans include initial evaluations, treatment planning, physiotherapy guidance, surgical care when required, and long-term recovery programs.
             </p>
 
             <div class="row">
               <div class="col-sm-12 col-md-6">
                 <div class="plan__items">
                   <ul class="list-items list-items-layout2 list-unstyled mb-0">
-                    <li>Digital X-ray imaging</li>
-                    <li>General ultrasound scans</li>
-                    <li>Pregnancy ultrasound services</li>
+                    <li>Orthopedic examination</li>
+                    <li>Injury and fracture care</li>
+                    <li>Pre-surgery preparation</li>
                   </ul>
                 </div>
               </div>
@@ -181,15 +175,15 @@
               <div class="col-sm-12 col-md-6">
                 <div class="plan__items">
                   <ul class="list-items list-items-layout2 list-unstyled mb-0">
-                    <li>Soft-tissue evaluations</li>
-                    <li>Chest & abdominal imaging</li>
-                    <li>Follow-up diagnostic tracking</li>
+                    <li>Post-surgery physiotherapy</li>
+                    <li>Pain management support</li>
+                    <li>Mobility and strength recovery</li>
                   </ul>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
+          </div><!-- /.widget__body -->
+        </div><!-- /.widget-plan -->
 
 
         <section class="contact-layout4 bg-overlay bg-overlay-primary-gradient pb-50 pb-50 mt-2">
@@ -201,7 +195,7 @@
                 <div class="col-sm-12">
                   <h4 class="contact-panel__title">Book An Appointment</h4>
                   <p class="contact-panel__desc mb-30">
-                    Contact our team for X-ray or ultrasound appointments. We ensure fast service, accurate imaging, and expert support.
+                    Feel free to contact our reception staff for appointments or orthopedic-related inquiries.
                   </p>
                 </div>
 
@@ -210,8 +204,8 @@
                     <i class="icon-widget form-group-icon"></i>
                     <select class="form-control">
                       <option value="0">Choose Clinic</option>
-                      <option value="1">Radiology Clinic</option>
-                      <option value="2">Ultrasound Services</option>
+                      <option value="1">Orthopedic Clinic</option>
+                      <option value="2">Physiotherapy Clinic</option>
                     </select>
                   </div>
                 </div>
@@ -221,8 +215,8 @@
                     <i class="icon-user form-group-icon"></i>
                     <select class="form-control">
                       <option value="0">Choose Doctor</option>
-                      <option value="1">Dr. Sunil Sharma</option>
-                      <option value="2">Dr. Neha Singh</option>
+                      <option value="1">Dr. Amir Hassan</option>
+                      <option value="2">Dr. Laila Mansour</option>
                     </select>
                   </div>
                 </div>
@@ -273,16 +267,16 @@
           </div>
         </section>
 
-      </div>
+      </div><!-- /.col-lg-8 -->
 
 
-      <!-- RIGHT SIDEBAR (UNCHANGED) -->
+      <!-- RIGHT SIDEBAR (unchanged) -->
       <div class="col-sm-12 col-md-12 col-lg-4">
         <aside class="sidebar has-marign-left sticky-top">
           <div class="widget widget-services">
             <h5 class="widget__title">Medical Services</h5>
             <div class="widget-content">
-              <ul class="list-unstyled mb-0">
+            <ul class="list-unstyled mb-0">
                 <li><a href="gynecology.php"><span>Gynecology Clinic</span><i class="icon-arrow-right"></i></a></li>
                 <li><a href="orthopedic.php"><span>Orthopedic Clinic</span><i class="icon-arrow-right"></i></a></li>
                 <li><a href="surgery.php"><span>Surgery Clinic</span><i class="icon-arrow-right"></i></a></li>
@@ -293,8 +287,8 @@
                 <li><a href="physician.php"><span>Physician Clinic</span><i class="icon-arrow-right"></i></a></li>
                 <li><a href="physiotherapy.php"><span>Physiotherapy Clinic</span><i class="icon-arrow-right"></i></a></li>
               </ul>
-            </div>
-          </div>
+            </div><!-- /.widget-content -->
+          </div><!-- /.widget-services -->
 
           <div class="widget widget-help bg-overlay bg-overlay-secondary-gradient">
             <div class="bg-img"><img src="assets/images/banners/5.jpg" alt="background"></div>
@@ -307,8 +301,8 @@
               <a href="tel:+917060100108" class="phone__number">
                 <i class="icon-phone"></i> <span>7060100108</span>
               </a>
-            </div>
-          </div>
+            </div><!-- /.widget-content -->
+          </div><!-- /.widget-help -->
 
           <div class="widget widget-schedule">
             <div class="widget-content">
@@ -319,14 +313,13 @@
               <ul class="time__list list-unstyled mb-0">
                 <li><span>24X7</span></li>
               </ul>
-            </div>
-          </div>
+            </div><!-- /.widget-content -->
+          </div><!-- /.widget-schedule -->
+        </aside><!-- /.sidebar -->
+      </div><!-- /.col-lg-4 -->
 
-        </aside>
-      </div>
-
-    </div>
-  </div>
+    </div><!-- /.row -->
+  </div><!-- /.container -->
 </section>
 
 <?php require "common/footer.php"; ?>

@@ -282,7 +282,7 @@
           <div class="widget widget-services">
             <h5 class="widget__title">Medical Services</h5>
             <div class="widget-content">
-              <ul class="list-unstyled mb-0">
+            <ul class="list-unstyled mb-0">
                 <li><a href="gynecology.php"><span>Gynecology Clinic</span><i class="icon-arrow-right"></i></a></li>
                 <li><a href="orthopedic.php"><span>Orthopedic Clinic</span><i class="icon-arrow-right"></i></a></li>
                 <li><a href="surgery.php"><span>Surgery Clinic</span><i class="icon-arrow-right"></i></a></li>

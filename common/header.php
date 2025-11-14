@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <meta name="description" content="Medcity - Medical Healthcare HTML5 Template">
-  <link href="assets/images/favicon/favicon.png" rel="icon">
-  <title>Medcity - Medical Healthcare HTML5 Template</title>
+  <link href="assets/uploads/logo.jpg" rel="icon">
+  <title>Sardar Joginder Singh Hospital</title>
 
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Roboto:wght@400;700&display=swap">
@@ -38,24 +38,24 @@
                       <div class="emergency__icon">
                         <i class="icon-call3"></i>
                       </div>
-                      <a href="tel:+201061245741" class="phone__number">
-                        <i class="icon-phone"></i> <span>+2 01061245741</span>
+                      <a href="tel:+917060100108" class="phone__number">
+                        <i class="icon-phone"></i> <span>+91 7060100108</span>
                       </a>
                       <p>Please feel free to contact our friendly reception staff with any general or medical enquiry.
                       </p>
-                      <a href="appointment.php" class="btn btn__secondary btn__link btn__block">
+                      <a href="" class="btn btn__secondary btn__link btn__block">
                         <span>Make Appointment</span> <i class="icon-arrow-right"></i>
                       </a>
                     </div><!-- /.miniPopup-emergency -->
                   </li>
                   <li>
-                    <i class="icon-phone"></i><a href="tel:+5565454117">Emergency Line: (002) 01061245741</a>
+                    <i class="icon-phone"></i><a href="tel:+917060100108">Emergency Line: 7060100108</a>
                   </li>
                   <li>
-                    <i class="icon-location"></i><a href="#">Location: Brooklyn, New York</a>
+                    <i class="icon-location"></i><a href="#">Location: Chakrata Rd, near Sarna pul, Selakui, Uttarakhand 248011</a>
                   </li>
                   <li>
-                    <i class="icon-clock"></i><a href="contact-us.php">Mon - Fri: 8:00 am - 7:00 pm</a>
+                    <i class="icon-clock"></i><a href="contact-us.php">Mon - Fri: 9:00 am - 5:00 pm</a>
                   </li>
                 </ul><!-- /.contact__list -->
                 <div class="d-flex">
@@ -77,108 +77,76 @@
       <nav class="navbar navbar-expand-lg sticky-navbar">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.php">
-            <img src="assets/images/logo/logo-light.png" class="logo-light" alt="logo">
-            <img src="assets/images/logo/logo-dark.png" class="logo-dark" alt="logo">
+            <img src="assets/uploads/logo.jpg" class="logo-light" alt="logo">
+            <img src="assets/uploads/logo.jpg" class="logo-dark" alt="logo">
           </a>
           <button class="navbar-toggler" type="button">
             <span class="menu-lines"><span></span></span>
           </button>
           <div class="collapse navbar-collapse" id="mainNavigation">
             <ul class="navbar-nav ml-auto">
-              <li class="nav__item has-dropdown">
-                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link active">Home</a>
+            <li class="nav__item">
+                <a href="index.php" class="nav__item-link">Home</a>
+              </li>
+              <!-- <li class="nav__item has-dropdown">
+                <a href="index.php" data-toggle="dropdown" class="dropdown-toggle nav__item-link active">Home</a> 
                 <ul class="dropdown-menu">
                   <li class="nav__item">
                     <a href="index.php" class="nav__item-link">Home Main</a>
-                  </li><!-- /.nav-item -->
+                  </li>
                   <li class="nav__item">
                     <a href="home-modern.php" class="nav__item-link">Home Modern</a>
-                  </li><!-- /.nav-item -->
+                  </li>
                   <li class="nav__item">
                     <a href="home-classic.php" class="nav__item-link">Home Classic</a>
-                  </li><!-- /.nav-item -->
+                  </li>
                   <li class="nav__item">
                     <a href="home-dentist.php" class="nav__item-link">Home Dentist</a>
-                  </li><!-- /.nav-item -->
+                  </li>
                   <li class="nav__item">
                     <a href="home-pharmacy.php" class="nav__item-link">Home pharmacy</a>
-                  </li><!-- /.nav-item -->
-                </ul><!-- /.dropdown-menu -->
-              </li><!-- /.nav-item -->
+                  </li>
+                </ul>
+               </li> -->
               <li class="nav__item has-dropdown">
                 <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">About Us</a>
                 <ul class="dropdown-menu">
                   <li class="nav__item">
-                    <a href="about-us.php" class="nav__item-link">About Us</a>
+                    <a href="#" class="nav__item-link">About Us</a>
                   </li><!-- /.nav-item -->
                   <li class="nav__item">
-                    <a href="services.php" class="nav__item-link">Our Services</a>
+                    <a href="#" class="nav__item-link">Our Services</a>
                   </li><!-- /.nav-item -->
                   <li class="nav__item">
-                    <a href="services-single.php" class="nav__item-link">single Services</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
+                    <a href="#" class="nav__item-link">single Services</a>
+                  </li>
+                  <!-- <li class="nav__item">
                     <a href="pricing.php" class="nav__item-link">Pricing & Plans</a>
+                  </li> -->
+                  <li class="nav__item">
+                    <a href="#" class="nav__item-link">Appointments</a>
                   </li><!-- /.nav-item -->
                   <li class="nav__item">
-                    <a href="appointment.php" class="nav__item-link">Appointments</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="faqs.php" class="nav__item-link">Help & FAQs</a>
+                    <a href="#" class="nav__item-link">Help & FAQs</a>
                   </li> <!-- /.nav-item -->
                   <li class="nav__item">
-                    <a href="gallery.php" class="nav__item-link">Our Gallery</a>
+                    <a href="#" class="nav__item-link">Our Gallery</a>
                   </li><!-- /.nav-item -->
                 </ul><!-- /.dropdown-menu -->
               </li><!-- /.nav-item -->
-              <li class="nav__item has-dropdown">
-                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Doctors</a>
-                <ul class="dropdown-menu">
-                  <li class="nav__item">
-                    <a href="doctors-timetable.php" class="nav__item-link">Doctors Timetable</a>
-                  </li> <!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="doctors-standard.php" class="nav__item-link">Our Doctors Standard</a>
-                  </li> <!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="doctors-modern.php" class="nav__item-link">Our Doctors Modern</a>
-                  </li> <!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="doctors-grid.php" class="nav__item-link">Our Doctors Grid</a>
-                  </li> <!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="doctors-single-doctor1.php" class="nav__item-link">Single Doctor 01</a>
-                  </li> <!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="doctors-single-doctor2.php" class="nav__item-link">Single Doctor 02</a>
-                  </li> <!-- /.nav-item -->
-                </ul><!-- /.dropdown-menu -->
-              </li><!-- /.nav-item -->
+              <!-- /.nav-item -->
               <li class="nav__item has-dropdown">
                 <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Blog</a>
                 <ul class="dropdown-menu">
                   <li class="nav__item">
-                    <a href="blog.php" class="nav__item-link">Blog Grid</a>
+                    <a href="#" class="nav__item-link">Blog Grid</a>
                   </li><!-- /.nav-item -->
                   <li class="nav__item">
-                    <a href="blog-single-post.php" class="nav__item-link">Single Blog Post</a>
+                    <a href="#" class="nav__item-link">Single Blog Post</a>
                   </li><!-- /.nav-item -->
                 </ul><!-- /.dropdown-menu -->
               </li><!-- /.nav-item -->
-              <li class="nav__item has-dropdown">
-                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Shop</a>
-                <ul class="dropdown-menu">
-                  <li class="nav__item">
-                    <a href="shop.php" class="nav__item-link">Our Products</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="shop-single-product.php" class="nav__item-link">Products Single</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="cart.php" class="nav__item-link">Cart</a>
-                  </li><!-- /.nav-item -->
-                </ul><!-- /.dropdown-menu -->
-              </li><!-- /.nav-item -->
+             
               <li class="nav__item">
                 <a href="contact-us.php" class="nav__item-link">Contacts</a>
               </li><!-- /.nav-item -->
@@ -187,30 +155,39 @@
           </div><!-- /.navbar-collapse -->
           <div class="d-none d-xl-flex align-items-center position-relative ml-30">
             <div class="miniPopup-departments-trigger">
-              <span class="menu-lines" id="miniPopup-departments-trigger-icon"><span></span></span>
-              <a href="departments.php">Departments</a>
+              <!-- <span class="menu-lines" id="miniPopup-departments-trigger-icon"><span></span></span> -->
+              <a href="#" id="miniPopup-departments-trigger-icon">Departments</a>
             </div>
             <ul id="miniPopup-departments" class="miniPopup miniPopup-departments dropdown-menu">
               <li class="nav__item">
-                <a href="department-single.php" class="nav__item-link">Neurology Clinic</a>
+                <a href="departments-single.php" class="nav__item-link">Gynecology Clinic</a>
               </li><!-- /.nav-item -->
               <li class="nav__item">
-                <a href="department-single.php" class="nav__item-link">Cardiology Clinic</a>
+                <a href="departments-single.php" class="nav__item-link">Orthopedic Clinic</a>
               </li><!-- /.nav-item -->
               <li class="nav__item">
-                <a href="department-single.php" class="nav__item-link">Pathology Clinic</a>
+                <a href="departments-single.php" class="nav__item-link">Surgery Clinic</a>
               </li><!-- /.nav-item -->
               <li class="nav__item">
-                <a href="department-single.php" class="nav__item-link">Laboratory Clinic</a>
+                <a href="departments-single.php" class="nav__item-link">Laboratory Clinic</a>
               </li><!-- /.nav-item -->
               <li class="nav__item">
-                <a href="department-single.php" class="nav__item-link">Pediatric Clinic</a>
+                <a href="departments-single.php" class="nav__item-link">Pediatric Clinic</a>
               </li><!-- /.nav-item -->
               <li class="nav__item">
-                <a href="department-single.php" class="nav__item-link">Cardiac Clinic</a>
+                <a href="departments-single.php" class="nav__item-link">Urology Clinic</a>
+              </li>
+              <li class="nav__item">
+                <a href="departments-single.php" class="nav__item-link">Radiology Clinic</a>
+              </li>
+              <li class="nav__item">
+                <a href="departments-single.php" class="nav__item-link">Physician Clinic</a>
+              </li>
+              <li class="nav__item">
+                <a href="departments-single.php" class="nav__item-link">Physiotherapy Clinic</a>
               </li><!-- /.nav-item -->
             </ul> <!-- /.miniPopup-departments -->
-            <a href="appointment.php" class="btn btn__primary btn__rounded ml-30">
+            <a href="#" class="btn btn__primary btn__rounded ml-30">
               <i class="icon-calendar"></i>
               <span>Appointment</span>
             </a>

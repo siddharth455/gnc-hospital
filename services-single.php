@@ -364,8 +364,8 @@
                   <p class="widget__desc">Please feel welcome to contact our friendly reception staff with any general
                     or medical enquiry call us.
                   </p>
-                  <a href="tel:+201061245741" class="phone__number">
-                    <i class="icon-phone"></i> <span>01061245741</span>
+                  <a href="tel:+27060100108" class="phone__number">
+                    <i class="icon-phone"></i> <span>7060100108</span>
                   </a>
                 </div><!-- /.widget-content -->
               </div><!-- /.widget-help -->
