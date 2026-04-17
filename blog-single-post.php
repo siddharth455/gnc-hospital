@@ -1,270 +1,429 @@
-<?php require "common/header.php"; ?>
-    <section class="page-title pt-30 pb-30 text-center">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-12">
-            <nav>
-              <ol class="breadcrumb mb-0">
-                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item"><a href="blog.html">Blog</a></li>
-                <li class="breadcrumb-item active" aria-current="page">6 Tips to Protect Your Mental Health When You’re
-                  Sick</li>
-              </ol>
-            </nav>
-          </div><!-- /.col-12 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.page-title -->
+<?php
+// blog-single-post.php
+// load functions (starts session) BEFORE output to avoid session_start() warning
+require_once __DIR__ . "/functions.php";
+require "common/header.php";
 
-    <!-- ======================
-      Blog Single
-    ========================= -->
-    <section class="blog blog-single pt-0 pb-80">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-8">
-            <div class="post-item mb-0">
-              <div class="post__img">
-                <a href="#">
-                  <img src="assets/images/blog/single/1.jpg" alt="post image" loading="lazy">
-                </a>
-              </div><!-- /.post-img -->
-              <div class="post__body pb-0">
-                <div class="post__meta-cat">
-                  <a href="#">Consulting</a><a href="#">Sales</a>
-                </div><!-- /.blog-meta-cat -->
-                <div class="post__meta d-flex align-items-center mb-20">
-                  <span class="post__meta-date">Jan 20, 2022</span>
-                  <a class="post__meta-author" href="#">Martin King</a>
-                  <a class="post__meta-comments" href="#">2 coments</a>
-                </div><!-- /.blog-meta -->
-                <h1 class="post__title mb-30">
-                  6 Tips to Protect Your Mental Health When You’re Sick
-                </h1>
-                <div class="post__desc">
-                  <p>Vast numbers of employees now work remotely, and it’s too late to develop a set of remote-work
-                    policies if you didn’t already have one. But there are ways to make the remote-work experience
-                    productive and engaging — for employees and the organization.</p>
-                  <p> “At most organizations, scenario planning focuses on the necessary operational responses to ensure
-                    business continuity. Few of these plans address the ability or bandwidth of employees to focus on
-                    their work,” says Brian Kropp, Distinguished Vice President, Research, Gartner.</p>
-                  <p>Use both direct conversations and indirect observations to get visibility into employees’
-                    challenges
-                    and concerns. Use every opportunity to make clear to employees that you support and care for them.
-                    To
-                    facilitate regular conversations between managers and employees, provide managers with guidance on
-                    how
-                    best to broach sensitive subjects arising from the COVID-19 pandemic, including alternative work
-                    models, job security and prospects, impact on staffing and tension in the workplace.</p>
-                  <p>Make sure employees have the technology they need to be successful, which may be more than just a
-                    mobile phone and laptop. For example, if you expect employees to attend virtual meetings, do they
-                    have
-                    adequate cameras?</p>
-                  <p>Even if you don’t have an extensive set of technology and collaborative tools available, you can
-                    equip employees to function effectively when remote. But don’t just assume that people know how to
-                    operate with virtual communications — or are comfortable in that environment. </p>
-                </div><!-- /.blog-desc -->
-              </div>
-            </div><!-- /.post-item -->
-            <div class="d-flex flex-wrap justify-content-between border-top border-bottom pt-30 pb-30 mb-40">
-              <div class="blog-share d-flex flex-wrap align-items-center">
-                <strong class="mr-20 color-heading">Share</strong>
-                <ul class="list-unstyled social-icons d-flex mb-0">
-                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                  <li><a href="#"><i class="fab fa-google"></i></a></li>
-                </ul>
-              </div><!-- /.blog-share -->
-              <div class="widget-tags">
-                <ul class="list-unstyled d-flex flex-wrap mb-0">
-                  <li><a href="#">Consulting</a></li>
-                  <li><a href="#">Tech</a></li>
-                  <li><a href="#">Employee</a></li>
-                </ul>
-              </div><!-- /.blog-tags -->
+// Get slug from query string
+$slug = $_GET['slug'] ?? null;
+if (!$slug) {
+    // Optionally redirect to blog listing
+    header('Location: blog.php');
+    exit;
+}
+
+// Helper: normalize image path for browser src (returns either full URL or relative 'admin/uploads/...' path)
+function normalize_image_src($stored) {
+    if (empty($stored)) return '';
+    $s = trim($stored);
+    if (stripos($s, 'http://') === 0 || stripos($s, 'https://') === 0) return $s;
+    if ($s[0] === '/') $s = ltrim($s, '/');
+    // map old 'uploads/...' to 'admin/uploads/...'
+    if (stripos($s, 'uploads/') === 0 && stripos($s, 'admin/uploads/') !== 0) {
+        return 'admin/' . $s;
+    }
+    return $s;
+}
+
+// Load blogs and find requested post
+$blogs = load_blogs();
+$post = null;
+$index = null;
+foreach ($blogs as $i => $b) {
+    if (($b['slug'] ?? '') === $slug) { $post = $b; $index = $i; break; }
+}
+if (!$post) {
+    http_response_code(404);
+    echo "<section class='container'><h1>Post not found</h1><p>The post you requested doesn't exist.</p></section>";
+    require "common/footer.php";
+    exit;
+}
+
+// Sort blogs by date for prev/next/recent (make a copy sorted)
+$sorted = $blogs;
+usort($sorted, function($a,$b){
+    $da = strtotime($a['date'] ?? '1970-01-01');
+    $db = strtotime($b['date'] ?? '1970-01-01');
+    return $db <=> $da;
+});
+
+// Find previous & next in sorted list
+$prev = $next = null;
+for ($i=0;$i<count($sorted);$i++){
+    if (($sorted[$i]['slug'] ?? '') === $slug) {
+        if (isset($sorted[$i+1])) $prev = $sorted[$i+1];
+        if (isset($sorted[$i-1])) $next = $sorted[$i-1];
+        break;
+    }
+}
+
+// Recent posts: take first 3 from $sorted excluding current
+$recent = [];
+foreach ($sorted as $s) {
+    if (($s['slug'] ?? '') === $slug) continue;
+    $recent[] = $s;
+    if (count($recent) >= 3) break;
+}
+
+// Prepare display values
+$imgSrc = normalize_image_src($post['image'] ?? '');
+$imgForOutput = $imgSrc ? htmlspecialchars($imgSrc) : '';
+$title = htmlspecialchars($post['title'] ?? '');
+$author = htmlspecialchars($post['author'] ?? '');
+$dateRaw = $post['date'] ?? '';
+$dateDisp = $dateRaw;
+if ($dateRaw !== '') {
+    $ts = strtotime($dateRaw);
+    if ($ts !== false) $dateDisp = date('M d, Y', $ts);
+}
+$category = $post['category'] ?? '';
+$categoryList = [];
+if (!empty($category)) {
+    if (is_array($category)) $categoryList = $category;
+    else $categoryList = array_map('trim', explode(',', $category));
+}
+// Content is HTML saved by editor — output as-is
+$contentHtml = $post['content'] ?? '';
+?>
+
+<!-- inline CSS tweaks -->
+<style>
+/* Card wrapper for main content */
+.single-blog-card {
+  background: #fff;
+  padding: 28px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  margin-bottom: 30px;
+}
+
+/* Reduce content font size and improve spacing */
+.post__desc {
+  font-size: 15px;         /* reduced size */
+  line-height: 1.78;
+  color: #333;
+}
+
+/* Hero image box (smaller height) */
+.single-post-hero {
+  width: 100%;
+  height: 350px;           /* smaller than before */
+  margin-bottom: 18px;
+  background: #f5f5f5;
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.single-post-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* Make main column a bit wider on large screens while keeping sidebar */
+@media (min-width: 992px) {
+  .col-lg-8 { max-width: 65%; flex: 0 0 65%; } /* widen main column */
+  .col-lg-4 { max-width: 32%; flex: 0 0 32%; }
+}
+
+/* Post meta spacing — ensure a gap between date and author */
+.post__meta { display:flex; align-items:center; gap:12px; margin-bottom:10px; }
+.post__meta-date { color: #6c757d; font-size: 14px; }
+.post__meta-author { color: #333; font-weight: 600; }
+
+/* TOC */
+#post-toc { margin-bottom: 18px; }
+#post-toc ul {
+  list-style: none;
+  padding-left: 0;
+  background: #fafafa;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+}
+#post-toc li { margin-bottom: 6px; }
+#post-toc a {
+  color: #0d6efd;
+  text-decoration: none;
+  font-size: 14px;
+}
+#post-toc a:hover { text-decoration: underline; }
+
+/* ensure headings inside content have some top spacing so scroll lands nicely */
+.post__desc h1, .post__desc h2, .post__desc h3 {
+  scroll-margin-top: 120px; /* modern browsers will respect this */
+  margin-top: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+/* small visual tweaks */
+.post__meta-cat a { margin-right: 8px; color: #6c757d; }
+.post__title { font-size: 28px; margin-bottom: 12px; }
+.widget-post-item .widget-post__img img { width: 70px; height: 50px; object-fit:cover; border-radius:4px; }
+</style>
+<section class="page-title pt-30 pb-30 text-center">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12">
+        <nav>
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+            <li class="breadcrumb-item"><a href="blog.php">Blog</a></li>
+            <li class="breadcrumb-item active" aria-current="page"><?= $title ?></li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================
+  Blog Single
+========================= -->
+<section class="blog blog-single pt-0 pb-80">
+  <div class="container-blog" style="max-width: 1200px; margin:10px auto">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-9"> <!-- main column -->
+        <div class="single-blog-card"> <!-- replaced post-item with card -->
+
+          <div class="post__img single-post-hero">
+            <?php if ($imgForOutput): ?>
+              <img src="<?= $imgForOutput ?>" alt="<?= $title ?>" loading="lazy">
+            <?php else: ?>
+              <img src="assets/images/blog/single/default.jpg" alt="<?= $title ?>" loading="lazy">
+            <?php endif; ?>
+          </div><!-- /.post-img -->
+
+          <div class="post__body pb-0">
+            <div class="post__meta-cat mb-2">
+              <?php foreach ($categoryList as $c): ?>
+                <a href="#"><?= htmlspecialchars($c) ?></a>
+              <?php endforeach; ?>
+            </div><!-- /.blog-meta-cat -->
+            <div class="post__meta d-flex align-items-center mb-12">
+              <span class="post__meta-date"><?= htmlspecialchars($dateDisp) ?></span>
+              <a class="post__meta-author ms-3" href="#"><?= $author ?></a>
+            </div><!-- /.blog-meta -->
+            <h1 class="post__title"><?= $title ?></h1>
+
+            <?php if (!empty($post['toc'])): ?>
+              <nav id="post-toc" class="mb-3" aria-label="Table of contents"></nav>
+            <?php endif; ?>
+
+            <div class="post__desc">
+              <?php
+                // Output saved HTML content (editor content)
+                echo $contentHtml;
+              ?>
+            </div><!-- /.blog-desc -->
+
+          </div>
+        </div><!-- /.single-blog-card -->
+
+        <div class="widget-nav d-flex justify-content-between mb-40">
+          <?php if ($prev): ?>
+          <a href="post.php?slug=<?= urlencode($prev['slug']) ?>" class="widget-nav__prev d-flex flex-wrap">
+            <div class="widget-nav__img">
+              <?php $pimg = normalize_image_src($prev['image'] ?? ''); ?>
+              <img src="<?= $pimg ? htmlspecialchars($pimg) : 'assets/images/blog/grid/2.jpg' ?>" alt="blog thumb">
             </div>
-            <div class="widget-nav d-flex justify-content-between mb-40">
-              <a href="#" class="widget-nav__prev d-flex flex-wrap">
-                <div class="widget-nav__img">
-                  <img src="assets/images/blog/grid/2.jpg" alt="blog thumb">
-                </div>
-                <div class="widget-nav__content">
-                  <span>Previous Post</span>
-                  <h5 class="widget-nav__ttile mb-0">Unsure About Wearing a Face Mask?</h5>
-                </div>
-              </a><!-- /.widget-prev  -->
-              <a href="#" class="widget-nav__next d-flex flex-wrap">
-                <div class="widget-nav__img">
-                  <img src="assets/images/blog/grid/3.jpg" alt="blog thumb">
-                </div>
-                <div class="widget-nav__content">
-                  <span>Next Post</span>
-                  <h5 class="widget-nav__ttile mb-0">Tips for Eating Healthy When You’re Home</h5>
-                </div>
-              </a><!-- /.widget-next  -->
+            <div class="widget-nav__content">
+              <span>Previous Post</span>
+              <h5 class="widget-nav__ttile mb-0"><?= htmlspecialchars($prev['title']) ?></h5>
             </div>
-            <div class="blog-author d-flex flex-wrap mb-70">
-              <div class="blog-author__avatar">
-                <img src="assets/images/blog/author/1.jpg" alt="avatar">
-              </div><!-- /.author-avatar  -->
-              <div class="blog-author__content">
-                <h6 class="blog-author__name">Mahmoud Baghagho</h6>
-                <p class="blog-author__bio">Founded by Begha over many cups of tea at her kitchen table in 2009, our
-                  brand promise is simple: to
-                  provide powerful digital marketing solutions to small and medium businesses.</p>
-                <ul class="social-icons list-unstyled mb-0">
-                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                  <li><a href="#"><i class="fab fa-vimeo-v"></i></a> </li>
-                  <li><a href="#"><i class="fab fa-linkedin"></i></a> </li>
-                </ul>
-              </div><!-- /.author-content  -->
-            </div><!-- /.blog-author  -->
-            <div class="blog-comments mb-70">
-              <h5 class="blog-widget__title">2 comments</h5>
-              <ul class="comments-list list-unstyled">
-                <li class="comment__item">
-                  <div class="comment__avatar">
-                    <img src="assets/images/blog/author/2.jpg" alt="avatar">
-                  </div>
-                  <div class="comment__content">
-                    <h5 class="comment__author">Richard Muldoone</h5>
-                    <span class="comment__date">Feb 28, 2017 - 08:07 pm</span>
-                    <p class="comment__desc">The example about the mattress sizing page you mentioned in the last WBF
-                      can be a perfect example
-                      of new keywords and content, and broadening the funnel as well. I can only imagine the sale
-                      numbers if that was the site of a mattress selling company.</p>
-                    <a class="comment__reply" href="#">reply</a>
-                  </div>
-                  <ul class="nested__comment list-unstyled">
-                    <li class="comment__item">
-                      <div class="comment__avatar">
-                        <img src="assets/images/blog/author/3.jpg" alt="avatar">
-                      </div>
-                      <div class="comment__content">
-                        <h5 class="comment__author">Mike Dooley</h5>
-                        <span class="comment__date">Feb 28, 2017 - 08:22 pm</span>
-                        <p class="comment__desc">The example about the mattress sizing page you mentioned in the last
-                          WBF can be a perfect
-                          example of new keywords and content, and broadening the funnel as well. I can only imagine the
-                          sale numbers if that was the site of a mattress selling company.</p>
-                        <a class="comment__reply" href="#">reply</a>
-                      </div>
-                    </li><!-- /.comment -->
-                  </ul><!-- /.nested-comment -->
-                </li><!-- /.comment -->
-              </ul><!-- /.comments-list -->
-            </div><!-- /.blog-comments -->
-            <div class="blog-widget blog-comments-form mb-30">
-              <h5 class="blog-widget__title">Leave A Reply</h5>
-              <form>
-                <div class="row">
-                  <div class="col-sm-12 col-md-4 col-lg-4">
-                    <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Name:">
-                    </div><!-- /.form-group -->
-                  </div><!-- /.col-lg-6 -->
-                  <div class="col-sm-12 col-md-4 col-lg-4">
-                    <div class="form-group">
-                      <input type="email" class="form-control" placeholder="Email:">
-                    </div><!-- /.form-group -->
-                  </div><!-- /.col-lg-6 -->
-                  <div class="col-sm-12 col-md-4 col-lg-4">
-                    <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Website:">
-                    </div><!-- /.form-group -->
-                  </div><!-- /.col-lg-6 -->
-                  <div class="col-12">
-                    <div class="form-group">
-                      <textarea class="form-control" placeholder="Comment"></textarea>
-                    </div><!-- /.form-group -->
-                  </div><!-- /.col-lg-12 -->
-                  <div class="col-sm-12 col-md-12 col-lg-12 d-flex flex-wrap align-items-center">
-                    <button type="submit" class="btn btn__primary btn__rounded btn__xl">
-                      <span>Submit Comment</span> <i class="icon-arrow-right"></i>
-                    </button>
-                  </div><!-- /.col-lg-12 -->
-                </div><!-- /.row -->
+          </a>
+          <?php else: ?>
+            <div></div>
+          <?php endif; ?>
+
+          <?php if ($next): ?>
+          <a href="post.php?slug=<?= urlencode($next['slug']) ?>" class="widget-nav__next d-flex flex-wrap">
+            <div class="widget-nav__img">
+              <?php $nimg = normalize_image_src($next['image'] ?? ''); ?>
+              <img src="<?= $nimg ? htmlspecialchars($nimg) : 'assets/images/blog/grid/3.jpg' ?>" alt="blog thumb">
+            </div>
+            <div class="widget-nav__content">
+              <span>Next Post</span>
+              <h5 class="widget-nav__ttile mb-0"><?= htmlspecialchars($next['title']) ?></h5>
+            </div>
+          </a>
+          <?php else: ?>
+            <div></div>
+          <?php endif; ?>
+        </div>
+
+      </div><!-- /.col-lg-8 -->
+
+      <div class="col-sm-12 col-md-12 col-lg-3"> <!-- sidebar preserved -->
+        <aside class="sidebar">
+          <div class="widget widget-search">
+            <h5 class="widget__title">Search</h5>
+            <div class="widget__content">
+              <form class="widget__form-search" method="get" action="blog.php">
+                <input type="text" class="form-control" name="q" placeholder="Search...">
+                <button class="btn" type="submit"><i class="icon-search"></i></button>
               </form>
-            </div><!-- /.blog-comments-form -->
-          </div><!-- /.col-lg-8 -->
-          <div class="col-sm-12 col-md-12 col-lg-4">
-            <aside class="sidebar">
-              <div class="widget widget-search">
-                <h5 class="widget__title">Search</h5>
-                <div class="widget__content">
-                  <form class="widget__form-search">
-                    <input type="text" class="form-control" placeholder="Search...">
-                    <button class="btn" type="submit"><i class="icon-search"></i></button>
-                  </form>
-                </div><!-- /.widget-content -->
-              </div><!-- /.widget-search -->
-              <div class="widget widget-posts">
-                <h5 class="widget__title">Recent Posts</h5>
-                <div class="widget__content">
-                  <!-- post item #1 -->
-                  <div class="widget-post-item d-flex align-items-center">
-                    <div class="widget-post__img">
-                      <a href="#"><img src="assets/images/blog/grid/2.jpg" alt="thumb"></a>
-                    </div><!-- /.widget-post-img -->
-                    <div class="widget-post__content">
-                      <span class="widget-post__date">Sep 19, 2022</span>
-                      <h4 class="widget-post__title"><a href="#">Succession Risks That Threaten Your Leadership</a>
-                      </h4>
-                    </div><!-- /.widget-post-content -->
-                  </div><!-- /.widget-post-item -->
-                  <!-- post item #2 -->
-                  <div class="widget-post-item d-flex align-items-center">
-                    <div class="widget-post__img">
-                      <a href="#"><img src="assets/images/blog/grid/3.jpg" alt="thumb"></a>
-                    </div><!-- /.widget-post-img -->
-                    <div class="widget-post__content">
-                      <span class="widget-post__date">July 7, 2022</span>
-                      <h4 class="widget-post__title"><a href="#">Do Employee Surveys Tell About Employee?</a>
-                      </h4>
-                    </div><!-- /.widget-post-content -->
-                  </div><!-- /.widget-post-item -->
-                  <!-- post item #3 -->
-                  <div class="widget-post-item d-flex align-items-center">
-                    <div class="widget-post__img">
-                      <a href="#"><img src="assets/images/blog/grid/6.jpg" alt="thumb"></a>
-                    </div><!-- /.widget-post-img -->
-                    <div class="widget-post__content">
-                      <span class="widget-post__date">March 13, 2022</span>
-                      <h4 class="widget-post__title"><a href="#">Succession Risks That Threaten Your Leadership</a>
-                      </h4>
-                    </div><!-- /.widget-post-content -->
-                  </div><!-- /.widget-post-item -->
-                </div><!-- /.widget-content -->
-              </div><!-- /.widget-posts -->
-              <div class="widget widget-categories">
-                <h5 class="widget__title">Categories</h5>
-                <div class="widget-content">
-                  <ul class="list-unstyled mb-0">
-                    <li><a href="#"><span class="cat-count">4</span><span>Neurology</span></a></li>
-                    <li><a href="#"><span class="cat-count">0</span><span>Cardiology</span></a></li>
-                    <li><a href="#"><span class="cat-count">3</span><span>Pathology</span></a></li>
-                    <li><a href="#"><span class="cat-count">2</span><span>Laboratory</span></a></li>
-                    <li><a href="#"><span class="cat-count">4</span><span>Pediatric</span></a></li>
-                    <li><a href="#"><span class="cat-count">1</span><span>Cardiac Clinic</span></a></li>
-                  </ul>
-                </div><!-- /.widget-content -->
-              </div><!-- /.widget-categories -->
-              <div class="widget widget-tags">
-                <h5 class="widget__title">Tags</h5>
-                <div class="widget-content">
-                  <ul class="list-unstyled mb-0">
-                    <li><a href="#">Insights</a></li>
-                    <li><a href="#">Industry</a></li>
-                    <li><a href="#">Modern</a></li>
-                    <li><a href="#">Corporate</a></li>
-                    <li><a href="#">Business</a></li>
-                  </ul>
-                </div><!-- /.widget-content -->
-              </div><!-- /.widget-tags -->
-            </aside><!-- /.sidebar -->
-          </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.blog Single -->
-    <?php require "common/footer.php"; ?>
+            </div><!-- /.widget-content -->
+          </div><!-- /.widget-search -->
+
+          <div class="widget widget-posts">
+            <h5 class="widget__title">Recent Posts</h5>
+            <div class="widget__content">
+              <?php foreach ($recent as $r): ?>
+                <div class="widget-post-item d-flex align-items-center">
+                  <div class="widget-post__img">
+                    <?php $rim = normalize_image_src($r['image'] ?? ''); ?>
+                    <a href="post.php?slug=<?= urlencode($r['slug']) ?>"><img src="<?= $rim ? htmlspecialchars($rim) : 'assets/images/blog/grid/2.jpg' ?>" alt="thumb"></a>
+                  </div>
+                  <div class="widget-post__content">
+                    <span class="widget-post__date"><?= htmlspecialchars($r['date'] ?? '') ?></span>
+                    <h4 class="widget-post__title"><a href="post.php?slug=<?= urlencode($r['slug']) ?>"><?= htmlspecialchars($r['title']) ?></a></h4>
+                  </div>
+                </div>
+              <?php endforeach; ?>
+            </div><!-- /.widget-content -->
+          </div><!-- /.widget-posts -->
+
+          <div class="widget widget-categories">
+            <h5 class="widget__title">Categories</h5>
+            <div class="widget-content">
+              <ul class="list-unstyled mb-0">
+                <?php
+                  // Build category counts
+                  $catCounts = [];
+                  foreach ($blogs as $bb) {
+                      $cats = $bb['category'] ?? '';
+                      if (is_array($cats)) $list = $cats;
+                      else $list = array_map('trim', explode(',', $cats));
+                      foreach ($list as $c) {
+                          if ($c === '' ) continue;
+                          $catCounts[$c] = ($catCounts[$c] ?? 0) + 1;
+                      }
+                  }
+                  foreach ($catCounts as $name => $count):
+                ?>
+                  <li><a href="#"><span class="cat-count"><?= (int)$count ?></span><span><?= htmlspecialchars($name) ?></span></a></li>
+                <?php endforeach; ?>
+              </ul>
+            </div><!-- /.widget-content -->
+          </div><!-- /.widget-categories -->
+
+          <div class="widget widget-tags">
+            <h5 class="widget__title">Tags</h5>
+            <div class="widget-content">
+              <ul class="list-unstyled mb-0">
+                <?php
+                  // sample tags from categories (you can change to your tag logic)
+                  $tags = array_keys($catCounts);
+                  foreach ($tags as $t): ?>
+                    <li><a href="#"><?= htmlspecialchars($t) ?></a></li>
+                <?php endforeach; ?>
+              </ul>
+            </div><!-- /.widget-content -->
+          </div><!-- /.widget-tags -->
+        </aside><!-- /.sidebar -->
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</section><!-- /.blog Single -->
+
+<script>
+(function(){
+  var tocContainer = document.getElementById('post-toc');
+  if (!tocContainer) return;
+  var content = document.querySelector('.post__desc');
+  if (!content) return;
+
+  // Try to find headings: prefer native h1-h3; also detect CKEditor heading classes as fallback
+  var headings = Array.from(content.querySelectorAll('h1,h2,h3'));
+
+  // Add elements that have CKEditor heading classes (defensive)
+  if (headings.length === 0) {
+    var ckHeadingElems = Array.from(content.querySelectorAll('[class*="ck-heading"], [class*="heading"]'));
+    ckHeadingElems.forEach(function(el){
+      // include only those that look like heading (not empty)
+      if (/h[1-6]/i.test(el.tagName) === false) {
+        // accept if text content is present
+        if ((el.textContent || '').trim()) headings.push(el);
+      }
+    });
+  }
+
+  if (!headings.length) return;
+
+  // Build UL
+  var ul = document.createElement('ul');
+
+  // Ensure unique ids
+  var idCount = {};
+
+  headings.forEach(function(h){
+    // skip if not visible or has no text
+    var text = (h.textContent || h.innerText || '').trim();
+    if (!text) return;
+
+    // generate base id
+    var base = text.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/(^-|-$)/g,'') || 'heading';
+    var count = idCount[base] || 0;
+    idCount[base] = count + 1;
+    var id = base + (count ? '-' + count : '');
+
+    // set id on the element (only if not already set)
+    if (!h.id) h.id = id;
+    else id = h.id; // preserve existing id
+
+    // detect level: if tag is h1/h2/h3 use that; otherwise try to infer from class names
+    var lvl = 3; // default
+    var tag = (h.tagName || '').toLowerCase();
+    if (/^h([1-6])$/.test(tag)) {
+      lvl = parseInt(tag.replace('h',''), 10);
+    } else {
+      // check for 'level' in class (ck-heading_level-2 or level-3)
+      var cls = h.className || '';
+      var m = cls.match(/level[_-]?(\d)/i) || cls.match(/heading[_-]?(\d)/i) || cls.match(/ck-heading_level_(\d)/i);
+      if (m) lvl = parseInt(m[1],10);
+    }
+    if (lvl < 1) lvl = 1;
+    if (lvl > 6) lvl = 6;
+
+    var li = document.createElement('li');
+    li.style.marginLeft = (Math.max(0, lvl - 1) * 12) + 'px';
+
+    var a = document.createElement('a');
+    a.href = '#' + encodeURIComponent(id);
+    a.textContent = text;
+
+    // click behavior: compute exact scroll top so the heading sits just below the page-title
+    a.addEventListener('click', function(e){
+      e.preventDefault();
+      var target = document.getElementById(id);
+      if (!target) return;
+
+      // Try to use scroll-margin-top if supported by CSS (we set it), otherwise compute offset
+      var headerEl = document.querySelector('.page-title');
+      var headerOffset = headerEl ? headerEl.offsetHeight + 20 : 120;
+
+      var rect = target.getBoundingClientRect();
+      var absoluteTop = rect.top + window.pageYOffset;
+      var scrollTo = Math.max(absoluteTop - headerOffset, 0);
+
+      window.scrollTo({ top: scrollTo, behavior: 'smooth' });
+
+      // Update location hash without jump
+      try {
+        history.replaceState(null, '', '#' + id);
+      } catch (err) { /* ignore */ }
+    });
+
+    li.appendChild(a);
+    ul.appendChild(li);
+  });
+
+  tocContainer.appendChild(ul);
+})();
+</script>
+<?php require "common/footer.php"; ?>

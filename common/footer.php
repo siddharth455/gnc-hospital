@@ -19,12 +19,16 @@
                 <h6 class="footer-widget__title">Departments</h6>
                 <nav>
                   <ul class="list-unstyled">
-                    <li><a href="#">Neurology Clinic</a></li>
-                    <li><a href="#">Cardiology Clinic</a></li>
-                    <li><a href="#">Pathology Clinic</a></li>
-                    <li><a href="#">Laboratory Analysis</a></li>
-                    <li><a href="#">Pediatric Clinic</a></li>
-                    <li><a href="#">Cardiac Clinic</a></li>
+                  <li><a href="gynecology.php">Gynecology Department</a></li>
+                  <li><a href="physician.php">Physician Department</a></li>
+                  <li><a href="pediatric.php">Pediatric Department</a></li>
+                    <li><a href="surgery.php">General Surgery Department</a></li>
+                    <li><a href="orthopedic.php">Orthopedic Department</a></li>
+                    <li><a href="urology.php">Urology Department</a></li>
+                    <li><a href="radiology.php">Radiology Department</a></li>
+                    <li><a href="laboratory.php">Pathology Department</a></li>
+                    <li><a href="#">Dental Department</a></li>
+                    <li><a href="physiotherapy.php">Physiotherapy Department</a></li>
                   </ul>
                 </nav>
               </div><!-- /.footer-widget__content -->
@@ -35,10 +39,12 @@
                 <nav>
                   <ul class="list-unstyled">
                     <li><a href="#">About Us</a></li>
-                    <li><a href="#">Our CLinic</a></li>
-                    <li><a href="#">Our Doctors</a></li>
-                    <li><a href="#">News & Media</a></li>
-                    <li><a href="#">Appointments</a></li>
+                    <li><a href="services.php">Our Service</a></li>
+                    <li><a href="departments.php">Our Departments</a></li>
+                    <li><a href="contact-us.php">Contact Us</a></li>
+                    <li><a href="appointment.php">Appointments</a></li>
+                    <li><a href="">Blogs</a></li>
+                    <li><a href="">Help & FAQs</a></li>
                   </ul>
                 </nav>
               </div><!-- /.footer-widget__content -->

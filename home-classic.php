@@ -681,10 +681,10 @@
                 <div>
                   <ul class="contact__list list-unstyled mb-30">
                     <li>
-                      <i class="icon-phone"></i><a href="tel:+917060100108">Emergency Line: (002) 7060100108</a>
+                      <i class="icon-phone"></i><a href="tel:+917060100108">Emergency Line: (+91) 7060100108</a>
                     </li>
                     <li>
-                      <i class="icon-location"></i><a href="#">Location: Brooklyn, New York</a>
+                      <i class="icon-location"></i><a href="#">Location: Chakrata Rd, near Sarna pul, Selakui, Uttarakhand 248011</a>
                     </li>
                     <li>
                       <i class="icon-clock"></i><a href="contact-us.html">Mon - Fri: 8:00 am - 7:00 pm</a>

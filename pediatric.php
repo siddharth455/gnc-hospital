@@ -1,6 +1,6 @@
 <?php require "common/header.php"; ?>
 <section class="page-title  page-title-layout7 bg-overlay pb-0">
-  <div class="bg-img"><img src="assets/images/page-titles/9.jpg" alt="background"></div>
+  <div class="bg-img"><img src="assets/uploads/pediatric-3.webp" alt="background"></div>
   <div class="container">
     <div class="row">
       <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
@@ -8,7 +8,7 @@
         <div class="info-card">
           <div class="row">
             <div class="col-sm-12 col-md-5">
-              <img src="assets/images/banners/1.jpg" alt="banner" class="rounded mb-20">
+              <img src="assets/uploads/pediatric-2.webp" alt="banner" class="rounded mb-20">
             </div>
             <div class="col-sm-12 col-md-7">
               <h2 class="info__ttile">Pediatric Clinic</h2>
@@ -50,8 +50,8 @@
         </div>
 
         <!-- IMAGE ONLY (NO VIDEO) -->
-        <div class="video-banner-layout2 mb-70" style="height:220px; overflow:hidden; border-radius:8px;">
-          <img src="assets/images/banners/6.jpg" alt="banner" style="height:100%; width:100%; object-fit:cover;">
+        <div class="video-banner-layout2 mb-70" style="height:320px; overflow:hidden; border-radius:8px;">
+          <img src="assets/uploads/pediatric-1.webp" alt="banner" style="height:100%; width:100%; object-fit:cover;">
         </div>
 
         <div class="text-block mb-50">
@@ -83,7 +83,67 @@
             We offer routine immunizations, newborn checks, school health assessments, minor procedures, chronic disease management (asthma, diabetes), neonatal care coordination, and developmental-behavioural pediatrics. For complex cases we coordinate with pediatric subspecialists including pediatric cardiology, neurology and endocrinology.
           </p>
         </div>
-
+        <div class="text-block mb-50">
+              <h5 class="text-block__title">Our Core Values</h5>
+              <p class="text-block__desc mb-20">Today, Joshi Hospital Selaqui is recognised as a trusted and growing healthcare institution, delivering exceptional care, advanced treatment, and improving patient outcomes through dedication and clinical excellence. For years, the hospital has served thousands of families in the region, offering compassionate medical support, specialized treatment, and reliable healthcare services to our community.
+              </p>
+            </div><!-- /.text-block -->
+            <div class="fancybox-layout1">
+              <div class="row">
+                <div class="col-md-6">
+                  <!-- fancybox item #1 -->
+                  <div class="fancybox-item d-flex">
+                    <div class="fancybox__icon">
+                      <i class="icon-heart"></i>
+                    </div><!-- /.fancybox__icon -->
+                    <div class="fancybox__content">
+                      <h4 class="fancybox__title">Medical Check Ups</h4>
+                      <p class="fancybox__desc">Recognised as a world renowned institution, you can consult any of our
+                        doctors by visiting our clinic.</p>
+                    </div><!-- /.fancybox-content -->
+                  </div><!-- /.fancybox-item -->
+                </div><!-- /.col-md-6 -->
+                <div class="col-md-6">
+                  <!-- fancybox item #2 -->
+                  <div class="fancybox-item d-flex">
+                    <div class="fancybox__icon">
+                      <i class="icon-doctor"></i>
+                    </div><!-- /.fancybox__icon -->
+                    <div class="fancybox__content">
+                      <h4 class="fancybox__title">Medical Treatment</h4>
+                      <p class="fancybox__desc">Free or low cost coverage adults with limited income recognised as a
+                        world renowned institution.</p>
+                    </div><!-- /.fancybox-content -->
+                  </div><!-- /.fancybox-item -->
+                </div><!-- /.col-md-6 -->
+                <div class="col-md-6">
+                  <!-- fancybox item #3 -->
+                  <div class="fancybox-item d-flex">
+                    <div class="fancybox__icon">
+                      <i class="icon-call3"></i>
+                    </div><!-- /.fancybox__icon -->
+                    <div class="fancybox__content">
+                      <h4 class="fancybox__title">Emergency Help 24/7 </h4>
+                      <p class="fancybox__desc">Contact our reception staff with any medical enquiry any time for low
+                        cost coverage adults.</p>
+                    </div><!-- /.fancybox-content -->
+                  </div><!-- /.fancybox-item -->
+                </div><!-- /.col-md-6 -->
+                <div class="col-md-6">
+                  <!-- fancybox item #4 -->
+                  <div class="fancybox-item d-flex">
+                    <div class="fancybox__icon">
+                      <i class="icon-drugs"></i>
+                    </div><!-- /.fancybox__icon -->
+                    <div class="fancybox__content">
+                      <h4 class="fancybox__title">Research Professionals </h4>
+                      <p class="fancybox__desc">All medical aspects practice for family, our reception staff with any
+                        medical enquiry any time.</p>
+                    </div><!-- /.fancybox-content -->
+                  </div><!-- /.fancybox-item -->
+                </div><!-- /.col-md-6 -->
+              </div><!-- /.row -->
+            </div>
         <div class="text-block mb-50">
           <h5 class="text-block__title">Health Tips & Info</h5>
 

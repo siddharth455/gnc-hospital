@@ -875,7 +875,7 @@
                   <i class="fas fa-plus"></i>
                 </div><!-- /.tooltip__icon -->
                 <div class="tooltip__panel">
-                  <p class="tooltip__title mb-0">2307 Beverley Rd Brooklyn, New York 11226 U.S.</p>
+                  <p class="tooltip__title mb-0">2307 Beverley Rd Chakrata Rd, near Sarna pul, Selakui, Uttarakhand 248011 11226 U.S.</p>
                 </div><!-- /.tooltip__panel -->
               </div><!-- /.tooltip-box -->
               <div class="tooltip-box tooltip-hover-left">
@@ -883,7 +883,7 @@
                   <i class="fas fa-plus"></i>
                 </div><!-- /.tooltip__icon -->
                 <div class="tooltip__panel">
-                  <p class="tooltip__title mb-0">2307 Beverley Rd Brooklyn, New York 11226 U.S.</p>
+                  <p class="tooltip__title mb-0">2307 Beverley Rd Chakrata Rd, near Sarna pul, Selakui, Uttarakhand 248011 11226 U.S.</p>
                 </div><!-- /.tooltip__panel -->
               </div><!-- /.tooltip-box -->
               <div class="tooltip-box">
@@ -891,7 +891,7 @@
                   <i class="fas fa-plus"></i>
                 </div><!-- /.tooltip__icon -->
                 <div class="tooltip__panel">
-                  <p class="tooltip__title mb-0">2307 Beverley Rd Brooklyn, New York 11226 U.S.</p>
+                  <p class="tooltip__title mb-0">2307 Beverley Rd Chakrata Rd, near Sarna pul, Selakui, Uttarakhand 248011 11226 U.S.</p>
                 </div><!-- /.tooltip__panel -->
               </div><!-- /.tooltip-box -->
             </div><!-- /.map-wrapper -->

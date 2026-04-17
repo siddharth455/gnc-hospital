@@ -9,11 +9,12 @@
   <link href="assets/uploads/logo.jpg" rel="icon">
   <title>Sardar Joginder Singh Hospital</title>
 
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Roboto:wght@400;700&display=swap">
+  <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Roboto:wght@400;700&display=swap">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
   <link rel="stylesheet" href="assets/css/libraries.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body>
@@ -115,16 +116,11 @@
                     <a href="#" class="nav__item-link">About Us</a>
                   </li><!-- /.nav-item -->
                   <li class="nav__item">
-                    <a href="#" class="nav__item-link">Our Services</a>
+                    <a href="services.php" class="nav__item-link">Our Services</a>
                   </li><!-- /.nav-item -->
+               
                   <li class="nav__item">
-                    <a href="#" class="nav__item-link">single Services</a>
-                  </li>
-                  <!-- <li class="nav__item">
-                    <a href="pricing.php" class="nav__item-link">Pricing & Plans</a>
-                  </li> -->
-                  <li class="nav__item">
-                    <a href="#" class="nav__item-link">Appointments</a>
+                    <a href="appointment.php" class="nav__item-link">Appointments</a>
                   </li><!-- /.nav-item -->
                   <li class="nav__item">
                     <a href="#" class="nav__item-link">Help & FAQs</a>
@@ -134,59 +130,57 @@
                   </li><!-- /.nav-item -->
                 </ul><!-- /.dropdown-menu -->
               </li><!-- /.nav-item -->
-              <!-- /.nav-item -->
               <li class="nav__item has-dropdown">
-                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Blog</a>
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Departments</a>
                 <ul class="dropdown-menu">
-                  <li class="nav__item">
-                    <a href="#" class="nav__item-link">Blog Grid</a>
-                  </li><!-- /.nav-item -->
-                  <li class="nav__item">
-                    <a href="#" class="nav__item-link">Single Blog Post</a>
-                  </li><!-- /.nav-item -->
-                </ul><!-- /.dropdown-menu -->
+                <li class="nav__item">
+                <a href="gynecology.php" class="nav__item-link">Gynecology Department</a>
               </li><!-- /.nav-item -->
-             
               <li class="nav__item">
-                <a href="contact-us.php" class="nav__item-link">Contacts</a>
+                <a href="physician.php" class="nav__item-link">Physician Department</a>
+              </li>
+              <li class="nav__item">
+                <a href="pediatric.php" class="nav__item-link">Pediatric Department</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item">
+                <a href="surgery.php" class="nav__item-link">General Surgery Department</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item">
+                <a href="orthopedic.php" class="nav__item-link">Orthopedic Department</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item">
+                <a href="urology.php" class="nav__item-link">Urology Department</a>
+              </li>
+              <li class="nav__item">
+                <a href="radiology.php" class="nav__item-link">Radiology Department</a>
+              </li>
+              <li class="nav__item">
+                <a href="laboratory.php" class="nav__item-link">Pathology Department</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item">
+                <a href="#" class="nav__item-link">Dental Department</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item">
+                <a href="physiotherapy.php" class="nav__item-link">Physiotherapy Department</a>
+              </li><!-- /.nav-item -->
+                </ul><!-- /.dropdown-menu -->
+              </li>
+              <!-- /.nav-item -->
+              <li class="nav__item">
+                <a href="blog.php" class="nav__item-link">Blogs</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item">
+                <a href="career.php" class="nav__item-link">Careers</a>
+              </li>
+              <li class="nav__item">
+                <a href="contact-us.php" class="nav__item-link">Contact Us</a>
               </li><!-- /.nav-item -->
             </ul><!-- /.navbar-nav -->
             <button class="close-mobile-menu d-block d-lg-none"><i class="fas fa-times"></i></button>
           </div><!-- /.navbar-collapse -->
+         
           <div class="d-none d-xl-flex align-items-center position-relative ml-30">
-            <div class="miniPopup-departments-trigger">
-              <!-- <span class="menu-lines" id="miniPopup-departments-trigger-icon"><span></span></span> -->
-              <a href="#" id="miniPopup-departments-trigger-icon">Departments</a>
-            </div>
-            <ul id="miniPopup-departments" class="miniPopup miniPopup-departments dropdown-menu">
-              <li class="nav__item">
-                <a href="departments-single.php" class="nav__item-link">Gynecology Clinic</a>
-              </li><!-- /.nav-item -->
-              <li class="nav__item">
-                <a href="departments-single.php" class="nav__item-link">Orthopedic Clinic</a>
-              </li><!-- /.nav-item -->
-              <li class="nav__item">
-                <a href="departments-single.php" class="nav__item-link">Surgery Clinic</a>
-              </li><!-- /.nav-item -->
-              <li class="nav__item">
-                <a href="departments-single.php" class="nav__item-link">Laboratory Clinic</a>
-              </li><!-- /.nav-item -->
-              <li class="nav__item">
-                <a href="departments-single.php" class="nav__item-link">Pediatric Clinic</a>
-              </li><!-- /.nav-item -->
-              <li class="nav__item">
-                <a href="departments-single.php" class="nav__item-link">Urology Clinic</a>
-              </li>
-              <li class="nav__item">
-                <a href="departments-single.php" class="nav__item-link">Radiology Clinic</a>
-              </li>
-              <li class="nav__item">
-                <a href="departments-single.php" class="nav__item-link">Physician Clinic</a>
-              </li>
-              <li class="nav__item">
-                <a href="departments-single.php" class="nav__item-link">Physiotherapy Clinic</a>
-              </li><!-- /.nav-item -->
-            </ul> <!-- /.miniPopup-departments -->
+            <!-- /.miniPopup-departments -->
             <a href="#" class="btn btn__primary btn__rounded ml-30">
               <i class="icon-calendar"></i>
               <span>Appointment</span>

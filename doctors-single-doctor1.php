@@ -125,7 +125,7 @@
               <li>
                 <h5 class="details__title">Office</h5>
                 <div class="details__content">
-                  <p class="mb-0">2307 Beverley Rd Brooklyn, New York 11226 United States.</p>
+                  <p class="mb-0">2307 Beverley Rd Chakrata Rd, near Sarna pul, Selakui, Uttarakhand 248011 11226 United States.</p>
                 </div>
               </li>
               <li>

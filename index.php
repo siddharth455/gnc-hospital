@@ -8,89 +8,49 @@
             <div class="row align-items-center">
               <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7">
                 <div class="slide__content">
-                  <h2 class="slide__title">Providing Best Medical Care</h2>
+                  <h2 class="slide__title">SJS Joshi Multispeciality Hospital</h2>
                   <p class="slide__desc">The health and well-being of our patients and their health care team will
                     always be our priority, so we follow the best practices for cleanliness.</p>
-                  <ul class="features-list list-unstyled mb-0 d-flex flex-wrap">
-                    <!-- feature item #1 -->
-                    <li class="feature-item">
-                      <div class="feature__icon">
-                        <i class="icon-heart"></i>
-                      </div>
-                      <h2 class="feature__title">Examination</h2>
-                    </li><!-- /.feature-item-->
-                    <!-- feature item #2 -->
-                    <li class="feature-item">
-                      <div class="feature__icon">
-                        <i class="icon-medicine"></i>
-                      </div>
-                      <h2 class="feature__title">Prescription </h2>
-                    </li><!-- /.feature-item-->
-                    <!-- feature item #3 -->
-                    <li class="feature-item">
-                      <div class="feature__icon">
-                        <i class="icon-heart2"></i>
-                      </div>
-                      <h2 class="feature__title">Cardiogram</h2>
-                    </li><!-- /.feature-item-->
-                    <!-- feature item #4 -->
-                    <li class="feature-item">
-                      <div class="feature__icon">
-                        <i class="icon-blood-test"></i>
-                      </div>
-                      <h2 class="feature__title">Blood Pressure</h2>
-                    </li><!-- /.feature-item-->
-                  </ul><!-- /.features-list -->
+                    <ul class="features-list list-unstyled mb-0 d-flex flex-wrap">
+    <!-- feature item #1 -->
+    <li class="feature-item">
+        <div class="feature__icon">
+            <i class="fa-solid fa-user-doctor"></i>
+        </div>
+        <h2 class="feature__title">Consult<br> a Doctor</h2>
+    </li>
+
+    <!-- feature item #2 -->
+    <li class="feature-item">
+        <div class="feature__icon">
+            <i class="fa-solid fa-flask"></i>
+        </div>
+        <h2 class="feature__title">Lab Test</h2>
+    </li>
+
+    <!-- feature item #3 -->
+    <li class="feature-item">
+        <div class="feature__icon">
+            <i class="fa-solid fa-x-ray"></i>
+        </div>
+        <h2 class="feature__title">Radio <br>Diagnostics</h2>
+    </li>
+
+    <!-- feature item #4 -->
+    <li class="feature-item">
+        <div class="feature__icon">
+            <i class="fa-solid fa-heart-pulse"></i>
+        </div>
+        <h2 class="feature__title">Book a General <br>Health Check-Up</h2>
+    </li>
+</ul>
+<!-- /.features-list -->
                 </div><!-- /.slide-content -->
               </div><!-- /.col-xl-7 -->
             </div><!-- /.row -->
           </div><!-- /.container -->
         </div><!-- /.slide-item -->
-        <div class="slide-item align-v-h">
-          <div class="bg-img"><img src="assets/uploads/banner-2.jpg" alt="slide img"></div>
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7">
-                <div class="slide__content">
-                  <h2 class="slide__title">All Aspects Of Medical Practice</h2>
-                  <p class="slide__desc">The health and well-being of our patients and their health care team will
-                    always be our priority, so we follow the best practices for cleanliness.</p>
-                  <ul class="features-list list-unstyled mb-0 d-flex flex-wrap">
-                    <!-- feature item #1 -->
-                    <li class="feature-item">
-                      <div class="feature__icon">
-                        <i class="icon-heart"></i>
-                      </div>
-                      <h2 class="feature__title">Examination</h2>
-                    </li><!-- /.feature-item-->
-                    <!-- feature item #2 -->
-                    <li class="feature-item">
-                      <div class="feature__icon">
-                        <i class="icon-medicine"></i>
-                      </div>
-                      <h2 class="feature__title">Prescription </h2>
-                    </li><!-- /.feature-item-->
-                    <!-- feature item #3 -->
-                    <li class="feature-item">
-                      <div class="feature__icon">
-                        <i class="icon-heart2"></i>
-                      </div>
-                      <h2 class="feature__title">Cardiogram</h2>
-                    </li><!-- /.feature-item-->
-                    <!-- feature item #4 -->
-                    <li class="feature-item">
-                      <div class="feature__icon">
-                        <i class="icon-blood-test"></i>
-                      </div>
-                      <h2 class="feature__title">Blood Pressure</h2>
-                    </li><!-- /.feature-item-->
-                  </ul><!-- /.features-list -->
-                </div><!-- /.slide-content -->
-              </div><!-- /.col-xl-7 -->
-            </div><!-- /.row -->
-          </div><!-- /.container -->
-        </div><!-- /.slide-item -->
-      </div><!-- /.carousel -->
+        
     </section><!-- /.slider -->
 
     <!-- ============================
@@ -105,28 +65,31 @@
                 <i class="icon-call3"></i>
               </div><!-- /.contact__icon -->
               <div class="contact__content">
-                <h2 class="contact__title">Emergency Cases</h2>
-                <p class="contact__desc">Please feel free to contact our friendly reception staff with any general or
-                  medical enquiry.</p>
-                <a href="tel:+917060100108" class="phone__number">
-                  <i class="icon-phone"></i> <span>7060100108</span>
-                </a>
-              </div><!-- /.contact__content -->
-            </div><!-- /.contact-box -->
-          </div><!-- /.col-md-4 -->
-          <div class="col-sm-12 col-md-4">
-            <div class="contact-box d-flex">
-              <div class="contact__icon">
-                <i class="icon-health-report"></i>
-              </div><!-- /.contact__icon -->
-              <div class="contact__content">
-                <h2 class="contact__title">Doctors Timetable</h2>
-                <p class="contact__desc">Qualified doctors available six days a week, view our timetable to make an
-                  appointment.</p>
-                <a href="#" class="btn btn__white btn__outlined btn__rounded">
-                  <span>View Timetable</span><i class="icon-arrow-right"></i>
-                </a>
-              </div><!-- /.contact__content -->
+    <h2 class="contact__title">Emergency Cases</h2>
+    <p class="contact__desc">
+        Please feel free to contact our friendly reception staff with any general or medical enquiry. 
+        <br><strong>24x7 Emergency Facility Available</strong>
+    </p>
+    <a href="tel:+917060100108" class="phone__number">
+        <i class="icon-phone"></i> 
+        <span>7060100108</span>
+    </a>
+</div><!-- /.contact__content -->
+</div><!-- /.contact-box -->
+</div><!-- /.col-md-4 -->
+
+<div class="col-sm-12 col-md-4">
+<div class="contact-box d-flex">
+        <div class="contact__icon">
+            <i class="fa-solid fa-id-card"></i>
+        </div>
+
+        <div class="contact__content">
+            <h2 class="contact__title">Ayushman & Golden Card Accepted</h2>
+            <p class="contact__desc">
+                We accept Ayushman Bharat, Golden Cards, and various government health schemes.
+            </p>
+        </div>
             </div><!-- /.contact-box -->
           </div><!-- /.col-md-4 -->
           <div class="col-sm-12 col-md-4">
@@ -173,8 +136,8 @@
                   compassionate manner. We hope you will allow us to care for you and strive to be the first and best
                   choice for healthcare.
                 </p>
-                <a href="#" class="btn btn__secondary btn__rounded mb-70">
-                  <span>Find A Doctor</span> <i class="icon-arrow-right"></i>
+                <a href="services.php" class="btn btn__secondary btn__rounded mb-70">
+                  <span>Our Services</span> <i class="icon-arrow-right"></i>
                 </a>
               </div>
             </div>
@@ -250,7 +213,7 @@
               <i class="fa-solid fa-venus"></i>
             </div>
             <div class="service__content">
-              <h4 class="service__title">Gynecology Clinic</h4>
+              <h4 class="service__title">Gynecology<br> Department</h4>
               <p class="service__desc">Comprehensive women's healthcare including reproductive, prenatal, and wellness services.</p>
               <ul class="list-items list-items-layout1 list-unstyled">
                 <li>Menstrual Disorders</li>
@@ -270,7 +233,7 @@
               <i class="fa-solid fa-bone"></i>
             </div>
             <div class="service__content">
-              <h4 class="service__title">Orthopedic Clinic</h4>
+              <h4 class="service__title">Orthopedic<br> Department</h4>
               <p class="service__desc">Comprehensive orthopedic treatment supporting bones, joints, muscles, and mobility.</p>
               <ul class="list-items list-items-layout1 list-unstyled">
                 <li>Joint Replacement</li>
@@ -290,7 +253,7 @@
               <i class="fa-solid fa-user-md"></i>
             </div>
             <div class="service__content">
-              <h4 class="service__title">Surgery Department</h4>
+              <h4 class="service__title">General Surgery Department</h4>
               <p class="service__desc">Advanced surgical care including emergency, general, and minimally invasive procedures.</p>
               <ul class="list-items list-items-layout1 list-unstyled">
                 <li>General Surgery</li>
@@ -310,7 +273,7 @@
               <i class="fa-solid fa-droplet"></i>
             </div>
             <div class="service__content">
-              <h4 class="service__title">Urology Clinic</h4>
+              <h4 class="service__title">Urology<br> Department</h4>
               <p class="service__desc">Specialized urology services treating kidney, bladder, prostate, and urinary conditions.</p>
               <ul class="list-items list-items-layout1 list-unstyled">
                 <li>Kidney Stones</li>
@@ -330,7 +293,7 @@
               <i class="fa-solid fa-baby"></i>
             </div>
             <div class="service__content">
-              <h4 class="service__title">Pediatric Clinic</h4>
+              <h4 class="service__title">Pediatric<br> Department</h4>
               <p class="service__desc">Pediatric care for infants, children, adolescents, growth, development, and wellness.</p>
               <ul class="list-items list-items-layout1 list-unstyled">
                 <li>Newborn Care</li>
@@ -350,8 +313,8 @@
               <i class="fa-solid fa-microscope"></i>
             </div>
             <div class="service__content">
-              <h4 class="service__title">Laboratory Analysis</h4>
-              <p class="service__desc">Laboratory analysis providing accurate diagnostic tests for comprehensive health evaluation today.</p>
+              <h4 class="service__title">Pathology<br> Department</h4>
+              <p class="service__desc">Pathology Department providing accurate diagnostic tests for comprehensive health evaluation today.</p>
               <ul class="list-items list-items-layout1 list-unstyled">
                 <li>Biochemistry</li>
                 <li>Pathology</li>
@@ -370,7 +333,7 @@
               <i class="fa-solid fa-x-ray"></i>
             </div>
             <div class="service__content">
-              <h4 class="service__title">Radiology</h4>
+              <h4 class="service__title">Radiology<br> Department</h4>
               <p class="service__desc">Radiology delivering clear medical imaging for diagnosis, treatment planning, and monitoring.</p>
               <ul class="list-items list-items-layout1 list-unstyled">
                 <li>X-Ray</li>
@@ -390,7 +353,7 @@
               <i class="fa-solid fa-stethoscope"></i>
             </div>
             <div class="service__content">
-              <h4 class="service__title">Physician</h4>
+              <h4 class="service__title">Physician<br> Department</h4>
               <p class="service__desc">General and internal medicine for adult healthcare, chronic disease, and prevention.</p>
               <ul class="list-items list-items-layout1 list-unstyled">
                 <li>General Checkup</li>
@@ -410,7 +373,7 @@
               <i class="fa-solid fa-heart-pulse"></i>
             </div>
             <div class="service__content">
-              <h4 class="service__title">Physiotherapy</h4>
+              <h4 class="service__title">Physiotherapy Department</h4>
               <p class="service__desc">Physiotherapy improving movement, reducing pain, restoring strength, flexibility, and function.</p>
               <ul class="list-items list-items-layout1 list-unstyled">
                 <li>Manual Therapy</li>
@@ -587,9 +550,6 @@
           <div class="col-md-12 col-lg-6 offset-lg-3 text-center">
             <p class="font-weight-bold color-gray mb-0">We hope you will allow us to care for you and strive to be the
               first and best choice for healthcare.
-              <a href="#" class="color-secondary">
-                <span>Contact Us For More Information</span> <i class="icon-arrow-right"></i>
-              </a>
             </p>
           </div><!-- /.col-lg-6 -->
         </div><!-- /.row -->
@@ -640,10 +600,7 @@
                   <p class="process__desc">SJS offers low-cost health coverage for adults with limited income, you
                     can
                     enroll.</p>
-                  <a href="#" class="btn btn__secondary btn__link">
-                    <span>Doctors’ Timetable</span>
-                    <i class="icon-arrow-right"></i>
-                  </a>
+                
                 </div><!-- /.process-item -->
                 <!-- process-item #2 -->
                 <div class="process-item">
@@ -654,10 +611,7 @@
                   <h4 class="process__title">Review Your Family Medical History</h4>
                   <p class="process__desc">Regular health exams can help find all the problems, also can find it early
                     chances.</p>
-                  <a href="#" class="btn btn__secondary btn__link">
-                    <span>Start A Check Up</span>
-                    <i class="icon-arrow-right"></i>
-                  </a>
+                 
                 </div><!-- /.process-item -->
                 <!-- process-item #3 -->
                 <div class="process-item">
@@ -669,10 +623,7 @@
                   <p class="process__desc">We have protocols to protect our patients while continuing to provide
                     necessary
                     care.</p>
-                  <a href="#" class="btn btn__secondary btn__link">
-                    <span>Explore Programs</span>
-                    <i class="icon-arrow-right"></i>
-                  </a>
+                 
                 </div><!-- /.process-item -->
                 <!-- process-item #4 -->
                 <div class="process-item">
@@ -683,10 +634,7 @@
                   <h4 class="process__title">Introduce You To Highly Qualified Doctors</h4>
                   <p class="process__desc">Our administration and support staff have exceptional skills and trained to
                     assist you. </p>
-                  <a href="#" class="btn btn__secondary btn__link">
-                    <span>Meet Our Doctors</span>
-                    <i class="icon-arrow-right"></i>
-                  </a>
+                 
                 </div><!-- /.process-item -->
                 <!-- process-item #5 -->
                 <div class="process-item">
@@ -697,10 +645,7 @@
                   <h4 class="process__title">Your custom Next process</h4>
                   <p class="process__desc">Our administration and support staff have exceptional skills to assist you.
                   </p>
-                  <a href="#" class="btn btn__secondary btn__link">
-                    <span>Meet Our Doctors</span>
-                    <i class="icon-arrow-right"></i>
-                  </a>
+                 
                 </div><!-- /.process-item -->
               </div><!-- /.carousel -->
             </div>
@@ -720,7 +665,7 @@
               </p>
             </div><!-- /.col-lg-7 -->
             <div class="col-sm-12 col-md-12 col-lg-3">
-              <a href="#" class="btn btn__primary btn__secondary-style2 btn__rounded">
+              <a href="departments.php" class="btn btn__primary btn__secondary-style2 btn__rounded">
                 <span>Healthcare Programs</span>
                 <i class="icon-arrow-right"></i>
               </a>
@@ -858,9 +803,9 @@
                     <div class="form-group">
                       <i class="icon-widget form-group-icon"></i>
                       <select class="form-control">
-                        <option value="0">Choose Clinic</option>
-                        <option value="1">Pathology Clinic</option>
-                        <option value="2">Pathology Clinic</option>
+                        <option value="0">Choose Department</option>
+                        <option value="1">Pathology Department</option>
+                        <option value="2">Pathology Department</option>
                       </select>
                     </div>
                   </div><!-- /.col-lg-6 -->
@@ -928,12 +873,7 @@
               <a href="contact-us.php" class="btn btn__white btn__rounded mr-30">
                 <i class="fas fa-heart"></i> <span>Make A Gift</span>
               </a>
-              <a class="video__btn video__btn-white popup-video" href="">
-                <div class="video__player">
-                  <i class="fa fa-play"></i>
-                </div>
-                <span class="video__btn-title color-white">Play Video</span>
-              </a>
+            
             </div>
             <div class="text__block">
               <p class="text__block-desc color-white font-weight-bold">We provide a comprehensive range of Medical plans for
@@ -942,37 +882,7 @@
                 <span class="font-weight-bold">Martin Qube</span><span>, Medcity Manager</span>
               </div> -->
             </div><!-- /.text__block -->
-            <div class="slick-carousel clients-light mt-20"
-              data-slick='{"slidesToShow": 3, "arrows": false, "dots": false, "autoplay": true,"autoplaySpeed": 2000, "infinite": true, "responsive": [ {"breakpoint": 992, "settings": {"slidesToShow": 3}}, {"breakpoint": 767, "settings": {"slidesToShow": 2}}, {"breakpoint": 480, "settings": {"slidesToShow": 2}}]}'>
-              <div class="client">
-                <img src="assets/images/clients/1.png" alt="client">
-                <img src="assets/images/clients/1.png" alt="client">
-              </div><!-- /.client -->
-              <div class="client">
-                <img src="assets/images/clients/2.png" alt="client">
-                <img src="assets/images/clients/2.png" alt="client">
-              </div><!-- /.client -->
-              <div class="client">
-                <img src="assets/images/clients/3.png" alt="client">
-                <img src="assets/images/clients/3.png" alt="client">
-              </div><!-- /.client -->
-              <div class="client">
-                <img src="assets/images/clients/4.png" alt="client">
-                <img src="assets/images/clients/4.png" alt="client">
-              </div><!-- /.client -->
-              <div class="client">
-                <img src="assets/images/clients/5.png" alt="client">
-                <img src="assets/images/clients/5.png" alt="client">
-              </div><!-- /.client -->
-              <div class="client">
-                <img src="assets/images/clients/6.png" alt="client">
-                <img src="assets/images/clients/6.png" alt="client">
-              </div><!-- /.client -->
-              <div class="client">
-                <img src="assets/images/clients/7.png" alt="client">
-                <img src="assets/images/clients/7.png" alt="client">
-              </div><!-- /.client -->
-            </div><!-- /.carousel -->
+          
           </div><!-- /.col-lg-5 -->
         </div><!-- /.row -->
       </div><!-- /.container -->

@@ -46,131 +46,215 @@
     <!-- ========================
         Services Layout 2
     =========================== -->
-    <section class="services-layout2 pt-130">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
-            <div class="heading text-center mb-60">
-              <h2 class="heading__subtitle">The Best Medical And General Practice Care!</h2>
-              <h3 class="heading__title">Providing Medical Care For The Sickest In Our Community.</h3>
-            </div><!-- /.heading -->
-          </div><!-- /.col-lg-6 -->
-        </div><!-- /.row -->
-        <div class="row">
-          <!-- service item #1 -->
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="service-item">
-              <div class="service__img">
-                <img src="assets/images/services/1.jpg" alt="img" loading="lazy">
-              </div><!-- /.service__img -->
-              <div class="service__content">
-                <h4 class="service__title">Neurology Clinic</h4>
-                <p class="service__desc">Some neurologists receive subspecialty training focusing on a particular area
-                  of
-                  the fields, these training programs are called fellowships, and are one to two years.
-                </p>
-                <a href="departments-single.html" class="btn btn__secondary btn__outlined btn__rounded">
-                  <span>Read More</span>
-                  <i class="icon-arrow-right"></i>
-                </a>
-              </div><!-- /.service__content -->
-            </div><!-- /.service-item -->
-          </div><!-- /.col-lg-4 -->
-          <!-- service item #2 -->
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="service-item">
-              <div class="service__img">
-                <img src="assets/images/services/2.jpg" alt="img" loading="lazy">
-              </div><!-- /.service__img -->
-              <div class="service__content">
-                <h4 class="service__title">Cardiology Clinic</h4>
-                <p class="service__desc">All cardiologists study the disorders of the heart, but the study of adult and
-                  child heart disorders are trained to take care of small children and adult heart disease.
-                </p>
-                <a href="departments-single.html" class="btn btn__secondary btn__outlined btn__rounded">
-                  <span>Read More</span>
-                  <i class="icon-arrow-right"></i>
-                </a>
-              </div><!-- /.service__content -->
-            </div><!-- /.service-item -->
-          </div><!-- /.col-lg-4 -->
-          <!-- service item #3 -->
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="service-item">
-              <div class="service__img">
-                <img src="assets/images/services/3.jpg" alt="img" loading="lazy">
-              </div><!-- /.service__img -->
-              <div class="service__content">
-                <h4 class="service__title">Pathology Clinic</h4>
-                <p class="service__desc">Pathology is the study of disease, it is the bridge between science and
-                  medicine.
-                  Also it underpins every aspect of patient care, from diagnostic testing and treatment.
-                </p>
-                <a href="departments-single.html" class="btn btn__secondary btn__outlined btn__rounded">
-                  <span>Read More</span>
-                  <i class="icon-arrow-right"></i>
-                </a>
-              </div><!-- /.service__content -->
-            </div><!-- /.service-item -->
-          </div><!-- /.col-lg-4 -->
-          <!-- service item #4 -->
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="service-item">
-              <div class="service__img">
-                <img src="assets/images/services/4.jpg" alt="img" loading="lazy">
-              </div><!-- /.service__img -->
-              <div class="service__content">
-                <h4 class="service__title">Laboratory Analysis</h4>
-                <p class="service__desc">Analyzing the radon or radon progeny concentrations with passive devices, or
-                  the
-                  act of calibrating radon or radon progeny measurement devices.
-                </p>
-                <a href="departments-single.html" class="btn btn__secondary btn__outlined btn__rounded">
-                  <span>Read More</span>
-                  <i class="icon-arrow-right"></i>
-                </a>
-              </div><!-- /.service__content -->
-            </div><!-- /.service-item -->
-          </div><!-- /.col-lg-4 -->
-          <!-- service item #5 -->
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="service-item">
-              <div class="service__img">
-                <img src="assets/images/services/5.jpg" alt="img" loading="lazy">
-              </div><!-- /.service__img -->
-              <div class="service__content">
-                <h4 class="service__title">Pediatric Clinic</h4>
-                <p class="service__desc">Pediatric providers see patients from birth into early adulthood to make sure
-                  children achieve stay healthy. Our care includes preventive health checkups.
-                </p>
-                <a href="departments-single.html" class="btn btn__secondary btn__outlined btn__rounded">
-                  <span>Read More</span>
-                  <i class="icon-arrow-right"></i>
-                </a>
-              </div><!-- /.service__content -->
-            </div><!-- /.service-item -->
-          </div><!-- /.col-lg-4 -->
-          <!-- service item #6 -->
-          <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="service-item">
-              <div class="service__img">
-                <img src="assets/images/services/6.jpg" alt="img" loading="lazy">
-              </div><!-- /.service__img -->
-              <div class="service__content">
-                <h4 class="service__title">Cardiac Clinic</h4>
-                <p class="service__desc">For people requiring additional follow up, the Cardiac Clinic provides rapid
-                  access to professionals specialized in diagnosing and treating heart disease.
-                </p>
-                <a href="departments-single.html" class="btn btn__secondary btn__outlined btn__rounded">
-                  <span>Read More</span>
-                  <i class="icon-arrow-right"></i>
-                </a>
-              </div><!-- /.service__content -->
-            </div><!-- /.service-item -->
-          </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.Services Layout 2 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+<section class="services-layout1 services-carousel">
+  <div class="bg-img"><img src="assets/images/backgrounds/2.jpg" alt="background"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
+        <div class="heading text-center mb-60 mt-60">
+          <h2 class="heading__subtitle">The Best Medical And General Practice Care!</h2>
+          <h3 class="heading__title">Providing Medical Care For The Sickest In Our Community.</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="slick-carousel"
+          data-slick='{"slidesToShow": 3, "slidesToScroll": 1, "autoplay": true, "arrows": false, "dots": true, 
+          "responsive": [
+            {"breakpoint": 992, "settings": {"slidesToShow": 2}},
+            {"breakpoint": 767, "settings": {"slidesToShow": 1}},
+            {"breakpoint": 480, "settings": {"slidesToShow": 1}}
+          ]}'>
+
+          <!-- Gynecology -->
+          <div class="service-item">
+            <div class="service__icon">
+              <i class="fa-solid fa-venus"></i>
+              <i class="fa-solid fa-venus"></i>
+            </div>
+            <div class="service__content">
+              <h4 class="service__title">Gynecology Clinic</h4>
+              <p class="service__desc">Comprehensive women's healthcare including reproductive, prenatal, and wellness services.</p>
+              <ul class="list-items list-items-layout1 list-unstyled">
+                <li>Menstrual Disorders</li>
+                <li>Pregnancy Care</li>
+                <li>Family Planning</li>
+              </ul>
+              <a href="gynecology.php" class="btn btn__secondary btn__outlined btn__rounded">
+                <span>Read More</span><i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Orthopedic -->
+          <div class="service-item">
+            <div class="service__icon">
+              <i class="fa-solid fa-bone"></i>
+              <i class="fa-solid fa-bone"></i>
+            </div>
+            <div class="service__content">
+              <h4 class="service__title">Orthopedic Clinic</h4>
+              <p class="service__desc">Comprehensive orthopedic treatment supporting bones, joints, muscles, and mobility.</p>
+              <ul class="list-items list-items-layout1 list-unstyled">
+                <li>Joint Replacement</li>
+                <li>Fracture Management</li>
+                <li>Sports Injuries</li>
+              </ul>
+              <a href="orthopedic.php" class="btn btn__secondary btn__outlined btn__rounded">
+                <span>Read More</span><i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Surgeon -->
+          <div class="service-item">
+            <div class="service__icon">
+              <i class="fa-solid fa-user-md"></i>
+              <i class="fa-solid fa-user-md"></i>
+            </div>
+            <div class="service__content">
+              <h4 class="service__title">Surgery Department</h4>
+              <p class="service__desc">Advanced surgical care including emergency, general, and minimally invasive procedures.</p>
+              <ul class="list-items list-items-layout1 list-unstyled">
+                <li>General Surgery</li>
+                <li>Trauma Surgery</li>
+                <li>Post-operative Care</li>
+              </ul>
+              <a href="surgery.php" class="btn btn__secondary btn__outlined btn__rounded">
+                <span>Read More</span><i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Urology -->
+          <div class="service-item">
+            <div class="service__icon">
+              <i class="fa-solid fa-droplet"></i>
+              <i class="fa-solid fa-droplet"></i>
+            </div>
+            <div class="service__content">
+              <h4 class="service__title">Urology Clinic</h4>
+              <p class="service__desc">Specialized urology services treating kidney, bladder, prostate, and urinary conditions.</p>
+              <ul class="list-items list-items-layout1 list-unstyled">
+                <li>Kidney Stones</li>
+                <li>Prostate Care</li>
+                <li>Urethral Treatment</li>
+              </ul>
+              <a href="urology.php" class="btn btn__secondary btn__outlined btn__rounded">
+                <span>Read More</span><i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Pediatric -->
+          <div class="service-item">
+            <div class="service__icon">
+              <i class="fa-solid fa-baby"></i>
+              <i class="fa-solid fa-baby"></i>
+            </div>
+            <div class="service__content">
+              <h4 class="service__title">Pediatric Clinic</h4>
+              <p class="service__desc">Pediatric care for infants, children, adolescents, growth, development, and wellness.</p>
+              <ul class="list-items list-items-layout1 list-unstyled">
+                <li>Newborn Care</li>
+                <li>Vaccinations</li>
+                <li>Child Growth Monitoring</li>
+              </ul>
+              <a href="pediatric.php" class="btn btn__secondary btn__outlined btn__rounded">
+                <span>Read More</span><i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Laboratory Analysis -->
+          <div class="service-item">
+            <div class="service__icon">
+              <i class="fa-solid fa-microscope"></i>
+              <i class="fa-solid fa-microscope"></i>
+            </div>
+            <div class="service__content">
+              <h4 class="service__title">Laboratory Analysis</h4>
+              <p class="service__desc">Laboratory analysis providing accurate diagnostic tests for comprehensive health evaluation today.</p>
+              <ul class="list-items list-items-layout1 list-unstyled">
+                <li>Biochemistry</li>
+                <li>Pathology</li>
+                <li>Microbiology</li>
+              </ul>
+              <a href="laboratory.php" class="btn btn__secondary btn__outlined btn__rounded">
+                <span>Read More</span><i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Radiology -->
+          <div class="service-item">
+            <div class="service__icon">
+              <i class="fa-solid fa-x-ray"></i>
+              <i class="fa-solid fa-x-ray"></i>
+            </div>
+            <div class="service__content">
+              <h4 class="service__title">Radiology</h4>
+              <p class="service__desc">Radiology delivering clear medical imaging for diagnosis, treatment planning, and monitoring.</p>
+              <ul class="list-items list-items-layout1 list-unstyled">
+                <li>X-Ray</li>
+                <li>Ultrasound</li>
+                <li>MRI</li>
+              </ul>
+              <a href="radiology.php" class="btn btn__secondary btn__outlined btn__rounded">
+                <span>Read More</span><i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Physician -->
+          <div class="service-item">
+            <div class="service__icon">
+              <i class="fa-solid fa-stethoscope"></i>
+              <i class="fa-solid fa-stethoscope"></i>
+            </div>
+            <div class="service__content">
+              <h4 class="service__title">Physician</h4>
+              <p class="service__desc">General and internal medicine for adult healthcare, chronic disease, and prevention.</p>
+              <ul class="list-items list-items-layout1 list-unstyled">
+                <li>General Checkup</li>
+                <li>Chronic Care</li>
+                <li>Preventive Health</li>
+              </ul>
+              <a href="physician.php" class="btn btn__secondary btn__outlined btn__rounded">
+                <span>Read More</span><i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Physiotherapy -->
+          <div class="service-item">
+            <div class="service__icon">
+              <i class="fa-solid fa-heart-pulse"></i>
+              <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+            <div class="service__content">
+              <h4 class="service__title">Physiotherapy</h4>
+              <p class="service__desc">Physiotherapy improving movement, reducing pain, restoring strength, flexibility, and function.</p>
+              <ul class="list-items list-items-layout1 list-unstyled">
+                <li>Manual Therapy</li>
+                <li>Exercise Rehab</li>
+                <li>Pain Management</li>
+              </ul>
+              <a href="physiotherapy.php" class="btn btn__secondary btn__outlined btn__rounded">
+                <span>Read More</span><i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- /.Services Layout 2 -->
 
     <!-- ======================
      Work Process 
@@ -217,10 +301,7 @@
                   <p class="process__desc">Medcity offers low-cost health coverage for adults with limited income, you
                     can
                     enroll.</p>
-                  <a href="#" class="btn btn__secondary btn__link">
-                    <span>Doctors’ Timetable</span>
-                    <i class="icon-arrow-right"></i>
-                  </a>
+                 
                 </div><!-- /.process-item -->
                 <!-- process-item #2 -->
                 <div class="process-item">
@@ -231,10 +312,7 @@
                   <h4 class="process__title">Review Your Family Medical History</h4>
                   <p class="process__desc">Regular health exams can help find all the problems, also can find it early
                     chances.</p>
-                  <a href="#" class="btn btn__secondary btn__link">
-                    <span>Start A Check Up</span>
-                    <i class="icon-arrow-right"></i>
-                  </a>
+                  
                 </div><!-- /.process-item -->
                 <!-- process-item #3 -->
                 <div class="process-item">
@@ -246,10 +324,7 @@
                   <p class="process__desc">We have protocols to protect our patients while continuing to provide
                     necessary
                     care.</p>
-                  <a href="#" class="btn btn__secondary btn__link">
-                    <span>Explore Programs</span>
-                    <i class="icon-arrow-right"></i>
-                  </a>
+                  
                 </div><!-- /.process-item -->
                 <!-- process-item #4 -->
                 <div class="process-item">
@@ -260,10 +335,7 @@
                   <h4 class="process__title">Introduce You To Highly Qualified Doctors</h4>
                   <p class="process__desc">Our administration and support staff have exceptional skills and trained to
                     assist you. </p>
-                  <a href="#" class="btn btn__secondary btn__link">
-                    <span>Meet Our Doctors</span>
-                    <i class="icon-arrow-right"></i>
-                  </a>
+                 
                 </div><!-- /.process-item -->
                 <!-- process-item #5 -->
                 <div class="process-item">
@@ -274,10 +346,7 @@
                   <h4 class="process__title">Your custom Next process</h4>
                   <p class="process__desc">Our administration and support staff have exceptional skills to assist you.
                   </p>
-                  <a href="#" class="btn btn__secondary btn__link">
-                    <span>Meet Our Doctors</span>
-                    <i class="icon-arrow-right"></i>
-                  </a>
+                 
                 </div><!-- /.process-item -->
               </div><!-- /.carousel -->
             </div>
@@ -306,171 +375,6 @@
         </div><!-- /.container -->
       </div><!-- /.cta -->
     </section><!-- /.Work Process -->
-
-    <!-- ======================
-      Team
-    ========================= -->
-    <section class="team-layout2 pb-80">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
-            <div class="heading text-center mb-40">
-              <h3 class="heading__title">Meet Our Doctors</h3>
-              <p class="heading__desc">Our administration and support staff all have exceptional people skills and
-                trained to assist you with all medical enquiries.
-              </p>
-            </div><!-- /.heading -->
-          </div><!-- /.col-lg-6 -->
-        </div><!-- /.row -->
-        <div class="row">
-          <div class="col-12">
-            <div class="slick-carousel"
-              data-slick='{"slidesToShow": 3, "slidesToScroll": 1, "autoplay": true, "arrows": false, "dots": false, "responsive": [ {"breakpoint": 992, "settings": {"slidesToShow": 2}}, {"breakpoint": 767, "settings": {"slidesToShow": 1}}, {"breakpoint": 480, "settings": {"slidesToShow": 1}}]}'>
-              <!-- Member #1 -->
-              <div class="member">
-                <div class="member__img">
-                  <img src="assets/images/team/1.jpg" alt="member img">
-                </div><!-- /.member-img -->
-                <div class="member__info">
-                  <h5 class="member__name"><a href="doctors-single-doctor1.html">Mike Dooley</a></h5>
-                  <p class="member__job">Cardiology Specialist</p>
-                  <p class="member__desc">Muldoone obtained his undergraduate degree in Biomedical Engineering at Tulane
-                    University prior to attending St George's University School of Medicine</p>
-                  <div class="mt-20 d-flex flex-wrap justify-content-between align-items-center">
-                    <a href="doctors-single-doctor1.html" class="btn btn__secondary btn__link btn__rounded">
-                      <span>Read More</span>
-                      <i class="icon-arrow-right"></i>
-                    </a>
-                    <ul class="social-icons list-unstyled mb-0">
-                      <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
-                      <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
-                      <li><a href="#" class="phone"><i class="fas fa-phone-alt"></i></a></li>
-                    </ul><!-- /.social-icons -->
-                  </div>
-                </div><!-- /.member-info -->
-              </div><!-- /.member -->
-              <!-- Member #2 -->
-              <div class="member">
-                <div class="member__img">
-                  <img src="assets/images/team/2.jpg" alt="member img">
-                </div><!-- /.member-img -->
-                <div class="member__info">
-                  <h5 class="member__name"><a href="doctors-single-doctor1.html">Dermatologists</a></h5>
-                  <p class="member__job">Cardiology Specialist</p>
-                  <p class="member__desc">Brian specializes in treating skin, hair, nail, and mucous membrane. He also
-                    address cosmetic issues, helping to revitalize the appearance of the skin</p>
-                  <div class="mt-20 d-flex flex-wrap justify-content-between align-items-center">
-                    <a href="doctors-single-doctor1.html" class="btn btn__secondary btn__link btn__rounded">
-                      <span>Read More</span>
-                      <i class="icon-arrow-right"></i>
-                    </a>
-                    <ul class="social-icons list-unstyled mb-0">
-                      <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
-                      <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
-                      <li><a href="#" class="phone"><i class="fas fa-phone-alt"></i></a></li>
-                    </ul><!-- /.social-icons -->
-                  </div>
-                </div><!-- /.member-info -->
-              </div><!-- /.member -->
-              <!-- Member #3 -->
-              <div class="member">
-                <div class="member__img">
-                  <img src="assets/images/team/3.jpg" alt="member img">
-                </div><!-- /.member-img -->
-                <div class="member__info">
-                  <h5 class="member__name"><a href="doctors-single-doctor1.html">Maria Andaloro</a></h5>
-                  <p class="member__job">Pediatrician</p>
-                  <p class="member__desc">Andaloro graduated from medical school and completed 3 years residency program
-                    in pediatrics. She passed rigorous exams by the American Board of Pediatrics.</p>
-                  <div class="mt-20 d-flex flex-wrap justify-content-between align-items-center">
-                    <a href="doctors-single-doctor1.html" class="btn btn__secondary btn__link btn__rounded">
-                      <span>Read More</span>
-                      <i class="icon-arrow-right"></i>
-                    </a>
-                    <ul class="social-icons list-unstyled mb-0">
-                      <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
-                      <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
-                      <li><a href="#" class="phone"><i class="fas fa-phone-alt"></i></a></li>
-                    </ul><!-- /.social-icons -->
-                  </div>
-                </div><!-- /.member-info -->
-              </div><!-- /.member -->
-              <!-- Member #4 -->
-              <div class="member">
-                <div class="member__img">
-                  <img src="assets/images/team/4.jpg" alt="member img">
-                </div><!-- /.member-img -->
-                <div class="member__info">
-                  <h5 class="member__name"><a href="doctors-single-doctor1.html">Dupree Black</a></h5>
-                  <p class="member__job">Urologist</p>
-                  <p class="member__desc">Black diagnose and treat diseases of the urinary tract in both men and women.
-                    He
-                    also diagnose and treat anything involving the reproductive tract in men.</p>
-                  <div class="mt-20 d-flex flex-wrap justify-content-between align-items-center">
-                    <a href="doctors-single-doctor1.html" class="btn btn__secondary btn__link btn__rounded">
-                      <span>Read More</span>
-                      <i class="icon-arrow-right"></i>
-                    </a>
-                    <ul class="social-icons list-unstyled mb-0">
-                      <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
-                      <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
-                      <li><a href="#" class="phone"><i class="fas fa-phone-alt"></i></a></li>
-                    </ul><!-- /.social-icons -->
-                  </div>
-                </div><!-- /.member-info -->
-              </div><!-- /.member -->
-              <!-- Member #5 -->
-              <div class="member">
-                <div class="member__img">
-                  <img src="assets/images/team/5.jpg" alt="member img">
-                </div><!-- /.member-img -->
-                <div class="member__info">
-                  <h5 class="member__name"><a href="doctors-single-doctor1.html">Markus skar</a></h5>
-                  <p class="member__job">Laboratory</p>
-                  <p class="member__desc">Skar play a very important role in your health care. People working in the
-                    clinical laboratory are responsible for conducting tests that provide crucial information.</p>
-                  <div class="mt-20 d-flex flex-wrap justify-content-between align-items-center">
-                    <a href="doctors-single-doctor1.html" class="btn btn__secondary btn__link btn__rounded">
-                      <span>Read More</span>
-                      <i class="icon-arrow-right"></i>
-                    </a>
-                    <ul class="social-icons list-unstyled mb-0">
-                      <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
-                      <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
-                      <li><a href="#" class="phone"><i class="fas fa-phone-alt"></i></a></li>
-                    </ul><!-- /.social-icons -->
-                  </div>
-                </div><!-- /.member-info -->
-              </div><!-- /.member -->
-              <!-- Member #6 -->
-              <div class="member">
-                <div class="member__img">
-                  <img src="assets/images/team/6.jpg" alt="member img">
-                </div><!-- /.member-img -->
-                <div class="member__info">
-                  <h5 class="member__name"><a href="doctors-single-doctor1.html">Kiano Barker</a></h5>
-                  <p class="member__job">Pathologist </p>
-                  <p class="member__desc">Barker help care for patients every day by providing their doctors with the
-                    information needed to ensure appropriate care. He also valuable resources for other physicians.</p>
-                  <div class="mt-20 d-flex flex-wrap justify-content-between align-items-center">
-                    <a href="doctors-single-doctor1.html" class="btn btn__secondary btn__link btn__rounded">
-                      <span>Read More</span>
-                      <i class="icon-arrow-right"></i>
-                    </a>
-                    <ul class="social-icons list-unstyled mb-0">
-                      <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
-                      <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
-                      <li><a href="#" class="phone"><i class="fas fa-phone-alt"></i></a></li>
-                    </ul><!-- /.social-icons -->
-                  </div>
-                </div><!-- /.member-info -->
-              </div><!-- /.member -->
-            </div><!-- /.carousel -->
-          </div><!-- /.col-12 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.Team -->
-
     <!-- ========================= 
       Testimonials layout 3
       =========================  -->
@@ -635,13 +539,13 @@
                 <div>
                   <ul class="contact__list list-unstyled mb-30">
                     <li>
-                      <i class="icon-phone"></i><a href="tel:+917060100108">Emergency Line: (002) 7060100108</a>
+                      <i class="icon-phone"></i><a href="tel:+917060100108">Emergency Line: (+91) 7060100108</a>
                     </li>
                     <li>
-                      <i class="icon-location"></i><a href="#">Location: Brooklyn, New York</a>
+                      <i class="icon-location"></i><a href="#">Location: Chakrata Rd, near Sarna pul, Selakui, Uttarakhand 248011</a>
                     </li>
                     <li>
-                      <i class="icon-clock"></i><a href="contact-us.html">Mon - Fri: 8:00 am - 7:00 pm</a>
+                      <i class="icon-clock"></i><a href="contact-us.html">Mon - Fri: 9:00 am - 5:00 pm</a>
                     </li>
                   </ul>
                   <a href="#" class="btn btn__white btn__rounded btn__outlined">Contact Us</a>
@@ -653,72 +557,5 @@
       </div><!-- /.container -->
     </section><!-- /.contact layout 2 -->
 
-    <!-- ========================
-        About Layout 5
-      =========================== -->
-    <section class="about-layout5 pt-20">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-5">
-            <div class="heading-layout2">
-              <h3 class="heading__title mb-80">Helping Patients From Around the Globe!!</h3>
-            </div><!-- /heading -->
-            <div class="map-wrapper mb-50">
-              <img src="assets/images/backgrounds/map.png" alt="map">
-              <div class="tooltip-box">
-                <div class="tooltip__icon">
-                  <i class="fas fa-plus"></i>
-                </div><!-- /.tooltip__icon -->
-                <div class="tooltip__panel">
-                  <p class="tooltip__title mb-0">2307 Beverley Rd Brooklyn, New York 11226 U.S.</p>
-                </div><!-- /.tooltip__panel -->
-              </div><!-- /.tooltip-box -->
-              <div class="tooltip-box tooltip-hover-left">
-                <div class="tooltip__icon">
-                  <i class="fas fa-plus"></i>
-                </div><!-- /.tooltip__icon -->
-                <div class="tooltip__panel">
-                  <p class="tooltip__title mb-0">2307 Beverley Rd Brooklyn, New York 11226 U.S.</p>
-                </div><!-- /.tooltip__panel -->
-              </div><!-- /.tooltip-box -->
-              <div class="tooltip-box">
-                <div class="tooltip__icon">
-                  <i class="fas fa-plus"></i>
-                </div><!-- /.tooltip__icon -->
-                <div class="tooltip__panel">
-                  <p class="tooltip__title mb-0">2307 Beverley Rd Brooklyn, New York 11226 U.S.</p>
-                </div><!-- /.tooltip__panel -->
-              </div><!-- /.tooltip-box -->
-            </div><!-- /.map-wrapper -->
-          </div><!-- /.col-lg-6 -->
-          <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-1">
-            <p class="heading__desc color-secondary font-weight-bold mb-30">We will work with you to develop
-              individualised care plans,
-              management of chronic diseases. If we cannot assist, we can provide referrals or advice about the type of
-              practitioner you require.</p>
-            <p class="heading__desc mb-30">We are committed to being the region’s premier healthcare network by
-              providing
-              patient-centered care that inspires clinical and service excellence, making us the first and best choice
-              for our patients, employees, physicians, employers, volunteers and communities. We serve the community by
-              improving the quality of life through better health.</p>
-            <div class="d-flex align-items-center mb-60">
-              <a href="contact-us.html" class="btn btn__secondary btn__rounded mr-30">
-                <i class="fas fa-heart"></i> <span>Make A Gift</span>
-              </a>
-              <a href="contact-us.html" class="btn btn__secondary btn__outlined btn__rounded mr-30">
-                More About Us
-              </a>
-            </div>
-            <ul class="list-items list-items-layout3 list-unstyled">
-              <li>We conduct a range of tests to help us work out why you're not feeling well and determine the right
-                treatment for you.</li>
-              <li>Our expert doctors, nurses and allied health professionals manage patients with a broad range of
-                medical issues.</li>
-              <li>We offer a wide range of care and support to our patients, from diagnosis to treatment and
-                rehabilitation.</li>
-            </ul>
-          </div><!-- /.col-lg-6 -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- /.About Layout 5 -->
+   
     <?php require "common/footer.php"; ?>
